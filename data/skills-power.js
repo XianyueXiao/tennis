@@ -1,0 +1,1 @@
+window.SKILLS_POWER = {"session_id": "train_004", "skill_name": "强力一击", "crit_threshold_pct": 18.4, "max_crit_speed_before": 65, "max_crit_speed": 87, "max_crit_stroke": "正手截击", "crit_usage_before": 0, "crit_usage_count": 38, "avg_speed": 68.2};

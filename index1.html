@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="embed.js"></script>
+    <title>网球训练报告</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="coach.css">
+    <link rel="stylesheet" href="coach-p22.css">
+    <link rel="stylesheet" href="coach-p23.css">
+    <link rel="stylesheet" href="coach-p24.css">
+    <link rel="stylesheet" href="outro.css">
+    <link rel="stylesheet" href="outro-p25.css">
+    <link rel="stylesheet" href="court-p24-p25.css">
+    <link rel="stylesheet" href="rain-p4.css">
+    <link rel="stylesheet" href="page-p14.css">
+</head>
+<body>
+    <div class="scroll-container">
+        <!-- 动画平移的内部包裹层 -->
+        <div class="pages-wrapper" id="pages-wrapper">
+        <!-- 开场第 1 页 · Figma 17:237 -->
+        <section class="page page-intro" id="page-intro" data-nav="1" data-figma="17:237" aria-label="开场 第一页">
+            <div class="intro-layout">
+                <div class="intro-scene">
+                    <img class="intro-bg fade-in-up" src="assets/page-intro/court-bg.png" width="1720" height="2048" alt="" aria-hidden="true">
+                    <p class="intro-kicker fade-in-up" style="animation-delay: 0.12s;">训练结算已就绪</p>
+                    <p class="intro-headline fade-in-up" style="animation-delay: 0.22s;">你准备好了吗？</p>
+                    <p class="intro-hint fade-in-up" style="animation-delay: 0.44s;">下滑查看</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 开场第 2 页 · Figma 225:4 网球落筐 -->
+        <section class="page page-basket" id="page-basket" data-nav="2" data-figma="225:4" aria-label="开场 击球统计 · 落筐">
+            <div class="page-basket__layout">
+                <div class="page-basket__stat fade-in-up">
+                    <p class="page-basket__kicker">本次训练你一共打了</p>
+                    <p class="page-basket__number" data-count="1500">0</p>
+                    <p class="page-basket__unit">拍</p>
+                </div>
+
+                <img class="page-basket__back" src="assets/page-basket/basket-back.svg" width="347" height="275" alt="" aria-hidden="true">
+
+                <canvas class="page-basket__canvas page-basket__canvas--back" aria-hidden="true"></canvas>
+                <canvas class="page-basket__canvas page-basket__canvas--front" aria-hidden="true"></canvas>
+
+                <img class="page-basket__front" src="assets/page-basket/basket-front.svg" width="455" height="301" alt="" aria-hidden="true">
+            </div>
+        </section>
+
+        <!-- 导航 3 · 降雨隐喻 -->
+        <section class="page page-basket-rain" id="page-basket-rain" data-nav="3" aria-label="降雨隐喻 · 毛毛雨"
+            data-training-minutes="66" data-hit-count="1500" data-court-area-m2="261.4">
+            <div class="page-basket__rain-layer" aria-hidden="true">
+                <div class="page-basket__rain-dim"></div>
+                <canvas class="page-basket__rain-canvas" aria-hidden="true"></canvas>
+                <div class="page-basket__rain-headline">
+                    <div class="page-basket__rain-heading">
+                        <p class="page-basket__rain-line1">相当于在局部地区下了一场</p>
+                        <p class="page-basket__rain-level">毛毛雨</p>
+                    </div>
+                    <div class="page-basket__rain-stats" data-rain-stats aria-hidden="true">
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">标准网球场</span>
+                            <span class="page-basket__rain-stat-value" data-rain-court-area>261.4</span>
+                            <span class="page-basket__rain-stat-suffix">m2</span>
+                        </div>
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">训练</span>
+                            <span class="page-basket__rain-stat-value" data-rain-minutes>66</span>
+                            <span class="page-basket__rain-stat-suffix">分钟</span>
+                        </div>
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">共</span>
+                            <span class="page-basket__rain-stat-value" data-rain-hits>1500</span>
+                            <span class="page-basket__rain-stat-suffix">拍</span>
+                        </div>
+                    </div>
+                    <div class="page-basket__rain-formula-block" data-rain-formula-block aria-hidden="true">
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                    </div>
+                </div>
+                <button type="button" class="page-basket__rain-cta" data-rain-cta>
+                    查看本次降雨情况
+                </button>
+            </div>
+        </section>
+
+        <!-- 导航 4 · 降雨统计 · Figma 83:899 -->
+        <section class="page page-basket-rain-chart" id="page-basket-rain-chart" data-nav="4" data-figma="83:899" aria-label="降雨统计">
+            <div class="page-basket__rain-chart" data-rain-chart aria-hidden="true">
+                <div class="rain-p4-layout">
+                    <header class="rain-p4-headline" data-rain-p4-headline>
+                        <p class="rain-p4-headline__label" data-figma="83:979">降雨量</p>
+                        <p class="rain-p4-headline__value" data-rain-depth data-figma="83:980">0.86mm</p>
+                        <p class="rain-p4-headline__tagline" data-rain-tagline data-figma="83:981">勉强可以浇花</p>
+                    </header>
+                    <div class="rain-p4-card" data-rain-p4-card hidden data-figma="83:964">
+                        <p class="rain-p4-card__text" data-rain-chart-tip>32拍/分钟</p>
+                    </div>
+                    <div class="rain-p4-graph" data-figma="83:969">
+                        <canvas class="page-basket__rain-chart-canvas" aria-hidden="true"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 导航 5 · 训练强度蛋糕 · Figma 4:6 -->
+        <section class="page page-cake" id="page-cake" data-nav="5" data-figma="8:5" aria-label="训练强度 · 打废网球">
+            <div class="page-cake__layout">
+                <div class="page-cake__headline fade-in-up">
+                    <div class="page-cake__text">
+                        <p class="page-cake__kicker">这一场，你的训练强度</p>
+                        <p class="page-cake__lead">打废了</p>
+                        <p class="page-cake__fraction">1/7</p>
+                        <p class="page-cake__tail">个网球</p>
+                    </div>
+                </div>
+                <div class="page-cake__scene">
+                    <img class="page-cake__plate fade-in-up" src="assets/page-cake/plate.png" alt="" style="animation-delay: 0.12s;">
+                    <img class="page-cake__cake-back fade-in-up" src="assets/page-cake/cake-back.png" alt="" style="animation-delay: 0.16s;">
+                    <div class="page-cake__racket-wrap fade-in-up" style="animation-delay: 0.2s;">
+                        <img class="page-cake__racket" src="assets/page-cake/racket.png" alt="">
+                    </div>
+                    <img class="page-cake__cake-front fade-in-up" src="assets/page-cake/cake-front.png" alt="" style="animation-delay: 0.24s;">
+                </div>
+                <div class="page-cake__outcome" aria-hidden="true">
+                    <p class="page-cake__outcome-line1">你切下了1/7个8寸蛋糕</p>
+                    <p class="page-cake__outcome-line2">你真是乐于分享！</p>
+                </div>
+                <div class="page-cake__cta-wrap fade-in-up" style="animation-delay: 0.34s;">
+                    <button type="button" class="page-cake__cta">吃一块蛋糕</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 导航 6 · 心率统计 · Figma 17:214 -->
+        <section class="page page-2" id="page-2" data-nav="6" data-figma="17:214" aria-label="心率统计">
+            <div class="hr-layout">
+                <div class="hr-stat hr-stat--avg fade-in-up">
+                    <p class="hr-stat__value">129.5</p>
+                    <p class="hr-stat__label">平均心率</p>
+                </div>
+                <div class="hr-stat hr-stat--max fade-in-up" style="animation-delay: 0.1s">
+                    <p class="hr-stat__value">151</p>
+                    <p class="hr-stat__label">最高心率</p>
+                </div>
+                <p class="hr-copy__line hr-copy__line--1 fade-in-up" style="animation-delay: 0.2s">以每次击球过程为2秒来算</p>
+                <p class="hr-copy__line hr-copy__line--2 fade-in-up" style="animation-delay: 0.28s">这相当于每一次击球</p>
+                <p class="hr-copy__prefix fade-in-up" style="animation-delay: 0.36s">你的心脏会跳动</p>
+                <p class="hr-copy__number pop-in" style="animation-delay: 0.4s">4</p>
+                <p class="hr-copy__suffix fade-in-up" style="animation-delay: 0.44s">下</p>
+                <div class="hr-equation" aria-hidden="true">
+                    <svg class="hr-equation__svg" width="305" height="36" viewBox="0 0 305 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="hr-eq-part hr-eq-part--ball">
+                            <path d="M36 18.0009C36 24.069 32.9961 29.4354 28.3952 32.6951C27.8591 33.0751 27.3024 33.4268 26.7268 33.7447C24.1404 35.1818 21.1647 36 17.9991 36C14.8334 36 11.8577 35.1818 9.27321 33.7447C8.69575 33.4268 8.13898 33.0751 7.60479 32.6951C3.00204 29.4354 0 24.069 0 18.0009C0 8.05998 8.0581 0 17.9991 0C27.94 0 36 8.05998 36 18.0009Z" fill="#BEEE00"/>
+                            <path d="M28.3952 32.6951C27.8591 33.0751 27.3024 33.4268 26.7268 33.7447C24.0464 31.1396 25.0132 26.6515 25.7449 23.2507C26.0459 21.8607 26.328 20.5459 26.328 19.6035C26.328 14.5004 23.5254 11.9141 17.9991 11.9141C12.4728 11.9141 9.67198 14.5004 9.67198 19.6035C9.67198 20.5459 9.95412 21.8607 10.2532 23.2507C10.9868 26.6515 11.9536 31.1377 9.27321 33.7447C8.69575 33.4268 8.13898 33.0751 7.60479 32.6951C9.78484 31.0211 9.2939 27.7218 8.41549 23.6476C8.09384 22.156 7.791 20.7472 7.791 19.6035C7.791 16.0278 9.11709 10.0331 17.9991 10.0331C26.881 10.0331 28.209 16.0278 28.209 19.6035C28.209 20.7472 27.9062 22.156 27.5845 23.6476C26.7061 27.7218 26.2152 31.0211 28.3952 32.6951Z" fill="#ffffff"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--equal">
+                            <rect x="61" y="9" width="28" height="6" fill="#ffffff"/>
+                            <rect x="61" y="21" width="28" height="6" fill="#ffffff"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M133 33C114.52 19.2562 109.492 5.12554 118.041 2.47498C126.588 -0.175579 133 9.13152 133 9.13152C133 9.13152 139.411 -0.175579 147.959 2.47498C156.508 5.12554 151.479 19.2562 133 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M185.5 33C168.479 19.2562 163.848 5.12554 171.722 2.47498C179.595 -0.175579 185.5 9.13152 185.5 9.13152C185.5 9.13152 191.405 -0.175579 199.278 2.47498C207.152 5.12554 202.52 19.2562 185.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M236.5 33C219.479 19.2562 214.848 5.12554 222.722 2.47498C230.595 -0.175579 236.5 9.13152 236.5 9.13152C236.5 9.13152 242.405 -0.175579 250.278 2.47498C258.152 5.12554 253.52 19.2562 236.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M287.5 33C270.479 19.2562 265.848 5.12554 273.722 2.47498C281.595 -0.175579 287.5 9.13152 287.5 9.13152C287.5 9.13152 293.405 -0.175579 301.278 2.47498C309.152 5.12554 304.52 19.2562 287.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="hr-heart-wave" aria-hidden="true">
+                <canvas class="hr-heart-wave__canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- 导航 7 · 平均每回合拍数 -->
+        <section class="page page-3" id="page-3" data-nav="7" aria-label="平均每回合拍数">
+            <!-- 数据文案 -->
+            <div class="p3-text-group fade-in-up">
+                <span class="p3-subtitle">本场你的</span>
+                <span class="p3-title">平均每回合拍数</span>
+            </div>
+            
+            <div class="p3-stat-group fade-in-up" style="animation-delay: 0.2s;">
+                <span class="p3-subtitle-2">达到了</span>
+                <span class="p3-number pop-in" style="animation-delay: 0.4s;">6</span>
+                <span class="p3-unit">拍</span>
+            </div>
+
+            <!-- 自定义 6 回合全屏虚线与飞行动画 -->
+            <div class="full-arc-container">
+                <svg class="arc-svg" viewBox="0 0 440 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <mask id="draw-mask">
+                            <path class="draw-mask-path" pathLength="100" d="M 1100 350 Q 220 250 -670 380 Q 220 290 1100 410 Q 220 330 -670 440 Q 220 370 1100 470 Q 350 400 -400 490 Q -180 550 50 610 Q 75 580 100 618 Q 117 598 135 624 Q 145 612 155 628 Q 161 620 167 630 Q 170 626 174 633" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" style="animation-delay: 0.2s;" />
+                        </mask>
+                    </defs>
+                    <path class="dashed-trajectory" d="M 1100 350 Q 220 250 -670 380 Q 220 290 1100 410 Q 220 330 -670 440 Q 220 370 1100 470 Q 350 400 -400 490 Q -180 550 50 610 Q 75 580 100 618 Q 117 598 135 624 Q 145 612 155 628 Q 161 620 167 630 Q 170 626 174 633" stroke="#32D74B" stroke-width="4" stroke-dasharray="8 8" fill="none" stroke-linecap="round" mask="url(#draw-mask)" />
+                </svg>
+                <img class="fly-arc" src="assets/single-ball.svg" alt="tennis ball" style="animation-delay: 0.2s;">
+            </div>
+        </section>
+
+        <!-- 导航 8 · 训练阶段（66 分钟） -->
+        <section class="page page-4" id="page-4" data-nav="8" aria-label="训练阶段 · 66分钟">
+            
+            <div class="page-4-content">
+                <!-- 场景层 -->
+                <div class="p4-scenery">
+                    <!-- 白色天空块 (0 到 339) -->
+                    <div style="position: absolute; background-color: white; width: 440px; height: 339px; left: 0; top: 0;"></div>
+                    <!-- 绿色墙壁块 -->
+                    <div style="position: absolute; background-color: #2ca867; height: 84px; left: 0; top: 339px; width: 440px"></div>
+                    <!-- 蓝色球场块 -->
+                    <div style="position: absolute; background: linear-gradient(180deg, #0073d1, #004bb4); height: 533px; left: 0; top: 423px; width: 440px"></div>
+                    <!-- 球场线 -->
+                    <div style="position: absolute; height: 221.65px; left: -30px; top: 421px; width: 500.7px">
+                        <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/984db6f96a2d256fa3b36ff3c73c8cf08d2f3ed2.svg" />
+                    </div>
+                </div>
+
+                <!-- 继承自导航5（#page-3 平均回合）的静态网球 -->
+                <div class="p4-static-ball">
+                    <img src="assets/single-ball.svg" alt="" style="width: 100%; height: 100%; display: block;" />
+                </div>
+
+                <!-- 顶部文本层 -->
+                <div class="p4-top-text" style="position: absolute; width: 100%; top: 90px; color: black; display: flex; flex-direction: column; align-items: center; z-index: 10;">
+                    <div style="display: flex; align-items: baseline; gap: 8px;">
+                        <span style="font-size: 22px; font-weight: 500;">你用</span>
+                        <span style="font-size: 80px; font-weight: 900; line-height: 1; letter-spacing: -2px;">66</span>
+                        <span style="font-size: 28px; font-weight: 800;">分钟</span>
+                        <span style="font-size: 22px; font-weight: 500;">的时间经历</span>
+                    </div>
+                    <div style="font-size: 22px; font-weight: 800; margin-top: 16px; display: flex; flex-direction: column; align-items: flex-end;">
+                        <div>热身/截击练习/高压球/综合应用/冷却</div>
+                        <div style="font-size: 18px; font-weight: 500; margin-top: 8px;">等阶段</div>
+                    </div>
+                </div>
+                <!-- 人物与底部文本层 -->
+                <div class="p4-person-and-text" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+                    <div style="position: absolute; height: 415px; left: 62px; overflow: clip; top: 285px; width: 409px">
+        <div style="position: absolute; top: 78.87%; right: 0; bottom: 2.48%; left: 10.05%">
+          <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/49bb6252409beb1904b5c5c81ad8fa10c8d47bef.svg" />
+        </div>
+        <div style="position: absolute; display: contents; top: 0.09%; right: 5.43%; bottom: 2.74%; left: 0.23%">
+          <div style="position: absolute; top: 75.23%; right: 72.94%; bottom: 18.95%; left: 23.48%">
+            <div style="position: absolute; top: -2.86%; right: -4.06%; bottom: -2.07%; left: -4.19%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/b03aee35ff14ef68183a23ac8408c8ec21854cb7.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 76.67%; right: 74.63%; bottom: 17.07%; left: 21.58%">
+            <div style="position: absolute; top: -3.4%; right: -8.74%; bottom: -2.13%; left: -3.87%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/e33f55c44cbc924a274da105a3be165c921224e6.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 79.28%; right: 67.36%; bottom: 10.87%; left: 22.64%">
+            <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/ca98e33b952b4a10286112f1205cc241145cc14a.svg" style="display: none;" />
+          </div>
+          <div style="position: absolute; top: 36.91%; right: 61.97%; bottom: 14.78%; left: 20.32%">
+            <div style="position: absolute; top: -0.28%; right: -0.69%; bottom: -0.25%; left: -0.7%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/f5053ecc1190344344a4ee1c2c0e47652a626cab.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 46.53%; right: 32.33%; bottom: 8.85%; left: 53.67%">
+            <div style="position: absolute; top: -0.31%; right: -1.23%; bottom: -0.29%; left: -0.87%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/cf0bd51f5eadb038406244bbf24b45b4cf7a3669.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 45.48%; right: 5.43%; bottom: 18.67%; left: 76.9%">
+            <div style="position: absolute; top: -0.42%; right: -0.69%; bottom: -1.32%; left: -0.93%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/3a4eb33720ecce5201e6a025ef9b14c30f9e6a5e.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 10.65%; right: 7.58%; bottom: 49.61%; left: 54.21%">
+            <div style="position: absolute; top: -0.42%; right: -0.37%; bottom: -0.33%; left: -0.39%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/a9aefda052aa78568f8aefc65520ef214f847b75.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 3.98%; right: 75.54%; bottom: 77.75%; left: 0.23%">
+            <div style="position: absolute; top: -0.66%; right: -0.82%; bottom: -0.66%; left: -0.53%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/d90d11b7d5fbcaac95f65c6640e6b547508373ba.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 0.1%; right: 22.36%; bottom: 61.13%; left: 26.04%">
+            <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/4a9194b047d30cf13780e5c1a015842951eac213.svg" />
+          </div>
+          <div style="position: absolute; top: 11.05%; right: 68.72%; bottom: 71.43%; left: 8.17%">
+            <div style="position: absolute; top: -0.73%; right: -3.89%; bottom: -0.69%; left: -0.91%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/962ae65bddb683161410cc973719d50d00c5ca41.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 21.79%; right: 87.21%; bottom: 75.79%; left: 11.51%">
+            <div style="position: absolute; top: -4.37%; right: -4.6%; bottom: 0; left: -9.62%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/f0f07d920cb8aa6a7642d60f894d0f8b44aa1769.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; display: flex; top: 23.02%; right: 85.22%; bottom: 75.32%; left: 12.93%; align-items: center; justify-content: center; container-type: size " >
+            <div style="flex: none; height: hypot(71.159cqw,45.1282cqh); transform: rotate(-59.97deg); transform: skewX(0.05deg); width: hypot(28.841cqw,-54.8718cqh)">
+              <div style="position: relative; width: 100%; height: 100%">
+                <div style="position: absolute; top: -8.02%; right: -11.43%; bottom: -8.02%; left: -11.43%">
+                  <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/bbe9ec5c52e5eec2a3aedefa27ab0c60745923af.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="position: absolute; top: 24.87%; right: 80.63%; bottom: 72.63%; left: 18.62%">
+            <div style="position: absolute; top: -0.23%; right: -16.26%; bottom: -3.84%; left: -9.9%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/2b180fb6f3ed1736d157aed678c4b6fc077dbe1a.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 9.6%; right: 66.54%; bottom: 79.85%; left: 24.81%">
+            <div style="position: absolute; top: -1.14%; right: -2.04%; bottom: -1.97%; left: -1.85%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/10f3c351758486790696a0de1c396dba4d1d4396.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 20.3%; right: 64.42%; bottom: 76.48%; left: 29.38%">
+            <div style="position: absolute; top: -2.46%; right: -0.6%; bottom: -3.57%; left: -1.49%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/7862ea36b212728427af34277d214ab78fe1b677.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 21.47%; right: 67.44%; bottom: 74.97%; left: 26.01%">
+            <div style="position: absolute; top: -1.65%; right: 0; bottom: -7.18%; left: -1.63%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/4917826fb9be0c1b6e3eff2bf2588c4ff9fa16b3.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 22.44%; right: 60.63%; bottom: 61.06%; left: 26.7%">
+            <div style="position: absolute; top: 0; right: -0.96%; bottom: -0.73%; left: -0.96%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/6bb9dc686dfffe0a60dc8fbd7f699768f127583a.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 3.44%; right: 22.36%; bottom: 70.64%; left: 35.58%">
+            <div style="position: absolute; top: -0.46%; right: -0.29%; bottom: -0.46%; left: 0">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/82dbc31a3a0449c549fb930eafdc8d88e1a7b3fb.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; display: contents; top: 55.12%; right: 34.99%; bottom: 8.87%; left: 31.35%">
+            <div style="position: absolute; display: contents; top: 48.96%; right: 30.9%; bottom: 0.04%; left: 27.7%">
+              <div style="position: absolute; top: 48.96%; right: 30.9%; bottom: 0.04%; left: 27.7%; mask-position: 14.921px 25.593px; mask-size: 137.702px 149.429px; mask-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%20137.702%20149.429%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M112.039%2095.0519C126.213%2065.0199%20118.366%2031.569%2094.5141%2020.3371C70.6619%209.10523%2039.8362%2024.3457%2025.6629%2054.3776C11.4897%2084.4095%2019.336%20117.86%2043.1882%20129.092C67.0404%20140.324%2097.8661%20125.084%20112.039%2095.0519Z%22%20fill%3D%22black%22/%3E%3C/svg%3E'); mask-repeat: no-repeat; -webkit-mask-position: 14.921px 25.593px; -webkit-mask-size: 137.702px 149.429px; -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%20137.702%20149.429%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M112.039%2095.0519C126.213%2065.0199%20118.366%2031.569%2094.5141%2020.3371C70.6619%209.10523%2039.8362%2024.3457%2025.6629%2054.3776C11.4897%2084.4095%2019.336%20117.86%2043.1882%20129.092C67.0404%20140.324%2097.8661%20125.084%20112.039%2095.0519Z%22%20fill%3D%22black%22/%3E%3C/svg%3E'); -webkit-mask-repeat: no-repeat;">
+                <div style="position: absolute; top: 0; right: -0.12%; bottom: 0; left: -0.12%">
+                  <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/8b847752bffcf97e0c61df65b1161147c28b2a88.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="position: absolute; top: 0.22%; right: 49.02%; bottom: 90.37%; left: 27.67%">
+            <div style="position: absolute; top: -1.28%; right: 0; bottom: -0.65%; left: -0.45%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/5e825a82d6d0c6ddd68d5f5f89541de094505b26.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 47.11%; right: 38.54%; bottom: 11.9%; left: 35.26%">
+            <div style="position: absolute; top: -0.29%; right: -0.47%; bottom: -0.3%; left: -0.47%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/626b2692531b030f48030d1d8e253eadeea48d7c.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 28.33%; right: 28.7%; bottom: 50.43%; left: 58.11%">
+            <div style="position: absolute; top: -0.77%; right: -0.93%; bottom: -0.62%; left: -0.93%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/ff4f10e83bb37a18a44b2fedc8b9b2e79ab558cf.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 0.75%; right: 29.32%; bottom: 56.92%; left: 50.39%">
+            <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/bff99281b2568ba714f559a66bd160be566edb32.svg" />
+          </div>
+          <div style="position: absolute; top: 35.36%; right: 30.31%; bottom: 61.28%; left: 68.57%">
+            <div style="position: absolute; top: -0.89%; right: -10.89%; bottom: -3.31%; left: -4.21%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/8d98d07c61a271a68520276b9a105d81f85d12a2.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 36.6%; right: 31.5%; bottom: 59.17%; left: 67.17%">
+            <div style="position: absolute; top: -0.88%; right: -9.17%; bottom: -2.83%; left: -0.99%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/c60105a33a6e2dfeb6e973e5fc9f9a4cc0d44458.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 37.74%; right: 32.76%; bottom: 57%; left: 64.88%">
+            <div style="position: absolute; top: -0.67%; right: -5.18%; bottom: -2.28%; left: -0.38%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/58455bc2e211a9fe04c90e164d663ae3b464bc42.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 35.91%; right: 34.74%; bottom: 58.27%; left: 62.84%">
+            <div style="position: absolute; top: -0.94%; right: -5.05%; bottom: -0.26%; left: -4.5%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/6e2bc96e8247cd08e6c853c24fbb7ff809a8879f.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 92.62%; right: 5.92%; bottom: 2.74%; left: 87.15%">
+            <div style="position: absolute; top: -15.83%; right: -2.4%; bottom: -2.6%; left: -1.76%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/8d411bb88951b06541ae01ca0670c91d4d394a52.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 6.15%; right: 78.81%; bottom: 76.09%; left: 5.25%">
+            <div style="position: absolute; top: -0.68%; right: -0.87%; bottom: -0.76%; left: -0.77%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/95cce041b540051893633b94615a43db141a225a.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 12.62%; right: 79.76%; bottom: 82.29%; left: 14.39%">
+            <div style="position: absolute; top: -2.37%; right: -2.09%; bottom: -2.03%; left: -2.09%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/7451412273ceb36c3dc645ad702f35729c956244.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 10.1%; right: 42.03%; bottom: 88.78%; left: 52.05%">
+            <div style="position: absolute; top: -10.16%; right: -0.66%; bottom: -10.68%; left: -0.21%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/17e546c7ae4ee90b2fb862064bfb5fb4fd1d8d41.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 0.7%; right: 29.32%; bottom: 63.09%; left: 50.92%">
+            <div style="position: absolute; top: -0.33%; right: -0.62%; bottom: -0.23%; left: 0">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/d30548f062395a29b0f2bbf2bf153583c01f93d9.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 8.81%; right: 36.94%; bottom: 60.59%; left: 58.11%">
+            <div style="position: absolute; top: 0; right: -2.47%; bottom: -0.13%; left: -2.47%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/03d53fca77ee3493ff34188c39245819b5294c59.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 0.54%; right: 47.95%; bottom: 88.62%; left: 49.51%">
+            <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/27720ef63b9d55bc02f71a9678db191713f7aec7.svg" />
+          </div>
+          <div style="position: absolute; top: 0.09%; right: 47.95%; bottom: 86.09%; left: 42.77%">
+            <div style="position: absolute; top: -0.36%; right: -1.32%; bottom: -0.87%; left: 0">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/8fd8cc246f591e879e5ba0294afea6bebff10e67.svg" />
+            </div>
+          </div>
+          <div style="position: absolute; top: 86.92%; right: 31.23%; bottom: 3.02%; left: 45.68%">
+            <div style="position: absolute; top: -5.74%; right: -0.53%; bottom: -1.2%; left: -0.53%">
+              <img alt="" style="display: block; max-width: none; width: 100%; height: 100%" src="assets/page4/8d971781c4bdfc003e8be8bce2fb94b409ecf537.svg" />
+            </div>
+          </div>
+        </div>
+        <div style="position: absolute; top: 93.34%; right: 67.62%; bottom: 3.45%; left: 19.63%">
+          <img alt="" style="position: absolute; display: block; top: 0; right: 0; bottom: 0; left: 0; max-width: none; width: 100%; height: 100%" src="assets/page4/d9ba2449fb23fa851212367b5d12757639f73909.svg" />
+        </div>
+                    
+                    </div>
+                    <!-- 完全按照 Figma 的绝对坐标进行精确定位 -->
+                    <div style="position: absolute; bottom: 80px; left: 0; width: 100%; height: 90px; color: white; z-index: 100;">
+                        <p style="position: absolute; transform: translateX(-50%); left: 114.5px; top: 10px; font-size: 20px; font-weight: normal; line-height: 20px; letter-spacing: -0.2px; margin: 0; white-space: nowrap;">最擅长的仍是</p>
+                        <p style="position: absolute; transform: translateX(-50%); left: 244px; top: 0px; font-size: 32px; font-weight: bold; line-height: 32px; letter-spacing: -0.32px; margin: 0; white-space: nowrap;">正手捡球</p>
+                        <p style="position: absolute; transform: translateX(-50%); left: 243px; top: 58px; font-size: 20px; font-weight: normal; line-height: 20px; letter-spacing: -0.2px; margin: 0; white-space: nowrap;">和</p>
+                        <p style="position: absolute; transform: translateX(-50%); left: 323px; top: 48px; font-size: 32px; font-weight: bold; line-height: 32px; letter-spacing: -0.32px; margin: 0; white-space: nowrap;">反手捡球</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 导航 9 · 空间分布 · 左右半场 · Figma 46:515 -->
+        <section class="page page-6" id="page-6" data-nav="9" aria-label="空间分布 · 左右半场">
+            <div class="sp-content">
+                <!-- 文字 -->
+                <h1 class="sp-headline sp-reveal" data-order="0">
+                    <span class="sp-headline__prefix">今天你接住了</span>
+                    <span class="sp-headline__number" data-count="total_player">749</span>
+                    <span class="sp-headline__suffix">颗球</span>
+                </h1>
+
+                <p class="sp-row sp-row--left sp-reveal" data-order="1" data-ball-group="left">
+                    <span class="sp-row__number" data-count="page1_left_balls">323</span>
+                    <span class="sp-row__label">颗落在左半场</span>
+                </p>
+
+                <p class="sp-row sp-row--right sp-reveal" data-order="2" data-ball-group="right">
+                    <span class="sp-row__number" data-count="page1_right_balls">292</span>
+                    <span class="sp-row__label">颗落在右半场</span>
+                </p>
+
+                <blockquote class="sp-spatial-copy sp-spatial-copy--double">
+                    <p class="sp-reveal sp-spatial-copy__line" data-order="3">对手得两边都站</p>
+                    <p class="sp-reveal sp-spatial-copy__line" data-order="4">没法赌你只会打一边</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 导航 10 · 空间分布 · 深浅失误 · Figma 46:592 -->
+        <section class="page page-7" id="page-7" data-nav="10" aria-label="空间分布 · 深浅失误">
+            <div class="sp-content">
+                <p class="sp-depth-row sp-depth-row--1 sp-reveal" data-order="0" data-ball-group="深">
+                    <span class="sp-depth-row__number" data-count="deep">376</span>
+                    <span class="sp-depth-row__label">颗被判</span>
+                    <span class="sp-depth-row__tag">「深」</span>
+                </p>
+
+                <p class="sp-depth-row sp-depth-row--2 sp-reveal" data-order="1" data-ball-group="中等">
+                    <span class="sp-depth-row__number" data-count="medium">187</span>
+                    <span class="sp-depth-row__label">颗被判</span>
+                    <span class="sp-depth-row__tag">「中」</span>
+                </p>
+
+                <p class="sp-depth-row sp-depth-row--3 sp-reveal" data-order="2" data-ball-group="浅">
+                    <span class="sp-depth-row__number" data-count="shallow">52</span>
+                    <span class="sp-depth-row__label">颗被判</span>
+                    <span class="sp-depth-row__tag">「浅」</span>
+                </p>
+
+                <div class="sp-spatial-miss sp-reveal" data-order="3">
+                    <span class="sp-spatial-miss__number" data-count="miss">134</span>
+                    <span class="sp-spatial-miss__label">颗出了界或下网</span>
+                </div>
+
+                <p class="sp-spatial-copy sp-spatial-copy--single sp-reveal" data-order="4">
+                    不是你打偏了，是它们不懂你
+                </p>
+            </div>
+        </section>
+
+        <!-- 导航 11 · 跑动距离 · Figma 37:454 -->
+        <section class="page page-5-trail" id="page-5-trail" data-nav="11" data-figma="37:454" aria-label="跑动距离">
+            <div class="page-5-trail__content">
+                <p class="p11-lead p11-text-fade">本场训练</p>
+                <p class="p11-sublead p11-text-fade">你为了击球一共跑动了</p>
+                <p class="p11-distance" id="p11Distance">0</p>
+                <p class="p11-unit">公里</p>
+
+                <div class="p11-dog" data-layer="dog" aria-hidden="true">
+                    <svg class="p11-dog__svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" fill="none" stroke="none"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--black" data-layer="dog-body" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--white" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                    </svg>
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/page5/dog-head.svg" width="91" height="68" alt="">
+                </div>
+
+                <p class="p11-foot-bold p11-foot-reveal">满场被遛的你</p>
+                <p class="p11-foot-regular p11-foot-reveal">下次一定会跑得更快吧！</p>
+            </div>
+        </section>
+
+        <!-- 导航 13 · 旋球类型 -->
+        <section class="page page-8" id="page-8" data-nav="12" aria-label="旋球类型">
+            <div class="sp-content">
+                <div class="sp-spin-balls">
+                    <div class="sp-spin-balls__tilt">
+                        <div class="sp-spin-balls__grid" id="spinBallsGrid"></div>
+                    </div>
+                </div>
+
+                <div class="sp-spin-hero sp-reveal" data-order="0">
+                    <span class="sp-spin-hero__number">338</span>
+                    <span class="sp-spin-hero__type">上旋</span>
+                    <span class="sp-spin-hero__unit">拍</span>
+                </div>
+
+                <div class="sp-spin-percent sp-reveal" data-order="1">
+                    <span class="sp-spin-percent__value">45%</span>
+                    <span class="sp-spin-percent__label">占总拍数</span>
+                </div>
+
+                <div class="sp-spin-cols sp-reveal" data-order="2">
+                    <span class="sp-spin-stat sp-spin-stat__number sp-spin-stat__number--flat">220</span>
+                    <span class="sp-spin-stat sp-spin-stat__unit sp-spin-stat__unit--flat">拍</span>
+                    <span class="sp-spin-stat sp-spin-stat__type sp-spin-stat__type--flat">平击</span>
+                    <span class="sp-spin-stat sp-spin-stat__number sp-spin-stat__number--slice">57</span>
+                    <span class="sp-spin-stat sp-spin-stat__unit sp-spin-stat__unit--slice">拍</span>
+                    <span class="sp-spin-stat sp-spin-stat__type sp-spin-stat__type--slice">下旋</span>
+                    <span class="sp-spin-stat sp-spin-stat__number sp-spin-stat__number--topspin">338</span>
+                    <span class="sp-spin-stat sp-spin-stat__unit sp-spin-stat__unit--topspin">拍</span>
+                    <span class="sp-spin-stat sp-spin-stat__type sp-spin-stat__type--topspin">上旋</span>
+                    <span class="sp-spin-cols__divider sp-spin-cols__divider--1" aria-hidden="true"></span>
+                    <span class="sp-spin-cols__divider sp-spin-cols__divider--2" aria-hidden="true"></span>
+                </div>
+
+                <p class="sp-spin-copy sp-reveal" data-order="3">看似在练球，</p>
+                <p class="sp-spin-copy sp-reveal" data-order="4">其实是在给网球做抛光</p>
+            </div>
+        </section>
+
+        <!-- 导航 14 · 转速 -->
+        <section class="page page-9" id="page-9" data-nav="13" aria-label="转速">
+            <div class="sp-content">
+                <div class="sp-rpm-avg sp-reveal" data-order="0">
+                    <span class="sp-rpm-avg__label">平均转速</span>
+                    <span class="sp-rpm-avg__value"><span data-count="rpm_avg">1868</span> rpm</span>
+                </div>
+
+                <p class="sp-rpm-label sp-reveal" data-order="1">全场最高</p>
+                <p class="sp-rpm-max sp-reveal" data-order="2"><span data-count="rpm_max">0</span> rpm</p>
+
+                <div class="sp-rpm-ball ball-zoom-start" aria-hidden="true">
+                    <div class="sp-rpm-ball__tilt">
+                        <div class="sp-rpm-ball__spin" id="rpmBallSpin">
+                            <img class="sp-rpm-ball__img" src="assets/rpm-ball.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sp-rpm-fact-row sp-reveal" data-order="3">
+                    <span class="sp-rpm-fact__lead sp-rpm-fact__lead--1">按这转速，地球一年只有</span>
+                    <span class="sp-rpm-fact__num sp-rpm-fact__num--1" data-count="rpm_year_seconds">7.36</span>
+                    <span class="sp-rpm-fact__unit sp-rpm-fact__unit--1">秒</span>
+                </div>
+
+                <div class="sp-rpm-fact-row sp-reveal" data-order="4">
+                    <span class="sp-rpm-fact__lead sp-rpm-fact__lead--2">历史上下五千年，也就不到</span>
+                    <span class="sp-rpm-fact__num sp-rpm-fact__num--2" data-count="rpm_history_minutes">2</span>
+                    <span class="sp-rpm-fact__unit sp-rpm-fact__unit--2">分钟</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 导航 14 · 球星影子 · Figma 74:875 · 440×956 -->
+        <section class="page page-10" id="page-10" data-nav="14" data-figma="74:875" aria-label="球星影子">
+            <div class="page-p14-layout">
+                <div class="page-p14-bg" aria-hidden="true">
+                    <div class="page-p14-vector-wrap" data-figma="74:876">
+                        <div class="page-p14-vector-bleed">
+                            <img class="page-p14-vector" src="assets/page-p14/vector-stroke.svg" width="567" height="891" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="page-p14-kicker anim-text" data-delay="0" data-figma="74:877">本场表现中</p>
+                <p class="page-p14-headline anim-text" data-delay="100" data-figma="74:878">你的身上有他们的影子</p>
+
+                <div class="page-p14-photo page-p14-photo--swiatek-ghost" data-figma="74:889" aria-hidden="true">
+                    <img src="assets/page-p14/swiatek.png" alt="">
+                </div>
+                <div class="page-p14-photo page-p14-photo--swiatek-solid" aria-hidden="true">
+                    <img src="assets/page-p14/swiatek.png" alt="">
+                </div>
+                <div class="page-p14-bar page-p14-bar--swiatek" data-figma="74:887" aria-hidden="true"></div>
+                <p class="page-p14-label page-p14-label--swiatek anim-text" data-delay="200" data-figma="74:886">斯瓦泰克 24%</p>
+
+                <div class="page-p14-photo page-p14-photo--nadal-ghost" data-figma="74:883" aria-hidden="true">
+                    <img src="assets/page-p14/nadal.png" alt="">
+                </div>
+                <div class="page-p14-photo page-p14-photo--nadal-solid" aria-hidden="true">
+                    <img src="assets/page-p14/nadal.png" alt="">
+                </div>
+                <div class="page-p14-bar page-p14-bar--nadal" data-figma="74:881" aria-hidden="true"></div>
+                <p class="page-p14-label page-p14-label--nadal anim-text" data-delay="300" data-figma="74:880">纳达尔 38%</p>
+
+                <div class="page-p14-photo page-p14-photo--zheng-ghost" data-figma="74:896" aria-hidden="true">
+                    <img src="assets/page-p14/zheng.png" alt="">
+                </div>
+                <div class="page-p14-photo page-p14-photo--zheng-solid" aria-hidden="true">
+                    <img src="assets/page-p14/zheng.png" alt="">
+                </div>
+                <div class="page-p14-bar page-p14-bar--zheng" data-figma="74:894" aria-hidden="true"></div>
+                <p class="page-p14-label page-p14-label--zheng anim-text" data-delay="400" data-figma="74:892">郑钦文 18%</p>
+            </div>
+        </section>
+
+        <!-- 导航 16 · 反手击球率 -->
+        <section class="page page-11" id="page-11" data-nav="15" aria-label="反手击球率">
+            <p class="page11-text-bold page11-title anim-text" data-delay="0">反手</p>
+            <p class="page11-text-regular page11-line-1 anim-text" data-delay="120">本场你的反手击球率</p>
+            <p class="page11-text-bold page11-percent anim-text" data-delay="240">35%</p>
+            <p class="page11-text-regular page11-line-4 anim-text" data-delay="360">达到了</p>
+            <p class="page11-line-2 anim-text" data-delay="480">你的反手 ≈ 纳达尔左手的...</p>
+            <svg class="page11-arrow-icon anim-text" data-delay="600" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 16,8 0,16" fill="#DEF900" />
+            </svg>
+            <svg class="page11-vector-mask" xmlns="http://www.w3.org/2000/svg" width="440" height="400" viewBox="0 0 440 400" fill="none">
+                <path d="M442 166.5L-1 0V399.5H442V166.5Z" fill="#004BB4" />
+            </svg>
+            <img class="page11-hero-image" src="assets/image 8.png" alt="" />
+            <div class="page11-footer-wrap anim-text" data-delay="600">
+                <p>握拍姿势</p>
+                <p>（仅限握拍）</p>
+            </div>
+        </section>
+
+        <!-- ========== 导航14 · 正手 Figma 365:885 ========== -->
+        <section class="page page-12" id="page-14" data-nav="16" data-figma="365:885" aria-label="正手">
+            <p class="page12-text-bold page12-title anim-text" data-delay="0">正手</p>
+            <p class="page12-text-regular page12-line-1 anim-text" data-delay="120">本场你的正手击球率</p>
+            <div class="page12-stat-row anim-text" data-delay="240">
+                <p class="page12-text-regular page12-line-4">达到了</p>
+                <p class="page12-text-bold page12-percent">65%</p>
+            </div>
+            <p class="page12-line-2 anim-text" data-delay="480">你的正手 ≈ 纳达尔正手的...</p>
+            <svg class="page12-arrow-icon anim-text" data-delay="600" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polygon points="0,0 16,8 0,16" fill="#DEF900" />
+            </svg>
+            <div class="page12-vector-mask">
+                <img class="page12-vector-bg" src="assets/p16-vector-bg.svg" style="transform: scaleX(-1); width: 100%; height: 100%;" alt="">
+            </div>
+            <img class="page12-hero-image" src="assets/p16-hero-figma.png" alt="" />
+            <div class="page12-footer-wrap anim-text" data-delay="600">
+                <p>一根小拇指</p>
+                <p>（半截）</p>
+            </div>
+        </section>
+
+        <!-- ========== 导航15 · 高旋转球 Figma 717:140 ========== -->
+        <section class="page page-13" id="page-13" data-nav="17" data-figma="717:140" aria-label="高旋转球">
+            <p class="page13-kicker anim-text" data-delay="0">这一场中</p>
+            <p class="page13-headline anim-text" data-delay="120">你打出了一颗高旋转球</p>
+
+            <img class="page13-court-bg" src="assets/p15-court-bg.png" width="446" height="625" alt="" aria-hidden="true" />
+
+            <img class="page13-shadow" src="assets/p15-player-shadow.png" width="372" height="133" alt="" aria-hidden="true" />
+            <img class="page13-hero" src="assets/p15-hero.png" width="407" height="725" alt="" />
+
+            <div class="page13-ball" aria-hidden="true">
+                <img class="page13-ball__img" src="assets/p15-ball.svg" width="116" height="116" alt="" />
+            </div>
+        </section>
+
+        <!-- ========== 导航16 · 2005年法网决赛（id=page-12） ========== -->
+        <section class="page page-14" id="page-12" data-nav="18" aria-label="2005年法网决赛">
+            <!-- Rotated background image -->
+            <div class="page14-bg-wrap anim-text court-transition" data-delay="0">
+                <div class="page14-bg-inner">
+                    <img class="bg-rotated court-img" src="assets/Group 49.png" alt="" />
+                </div>
+            </div>
+
+            <!-- 两个圆圈包在一起，整体做掉落动画 -->
+            <div class="page14-circles-wrap anim-text" data-delay="200">
+                <img class="page14-circle-small" src="assets/Ellipse 25.png" alt="" />
+                <img class="page14-circle-large" src="assets/Group 55.png" alt="" />
+            </div>
+
+            <!-- Top text -->
+            <p class="page14-text-top-1 anim-text" data-delay="300">这一球，让我想起了</p>
+            <p class="page14-text-top-2 anim-text" data-delay="400">2005年法网决赛</p>
+
+            <!-- Bottom text -->
+            <p class="page14-text-bottom-1 anim-text" data-delay="500">纳达尔对阵费德勒时，那记标志性的</p>
+            <p class="page14-text-bottom-2 anim-text" data-delay="600">'香蕉球'上旋正手！</p>
+        </section>
+
+        <!-- 导航 20 · 相似度对比 -->
+        <section class="page page-15" id="page-15" data-nav="19" aria-label="相似度对比">
+            <div class="page15-bg-wrap court-transition">
+                <div class="page15-bg-inner">
+                    <img class="bg-rotated court-img" src="assets/court-lines.svg" alt="" />
+                </div>
+            </div>
+
+            <p class="page15-text page15-desc-1 anim-text" data-delay="0">纳达尔那球旋转3200rpm</p>
+            <p class="page15-text page15-desc-2 anim-text" data-delay="100">弧线3.2米</p>
+            <p class="page15-text page15-desc-3 anim-text" data-delay="200">你这球旋转2975rpm</p>
+            <p class="page15-text page15-desc-4 anim-text" data-delay="300">弧线2.5米</p>
+
+            <p class="page15-text page15-similar-title anim-text" data-delay="400">相似度高达</p>
+            <p class="page15-big-number page15-percent-0 anim-text" data-delay="500">0%</p>
+
+            <p class="page15-text page15-fact-title anim-text" data-delay="600">但"都是上旋"这个事实，相似度</p>
+            <p class="page15-big-number page15-percent-100 anim-text" data-delay="700">100%</p>
+
+            <div class="page15-tennis-icon anim-text" data-delay="300">
+                <div class="page15-tennis-icon-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                        <ellipse cx="50.5" cy="54.5" rx="28.5" ry="18.5" fill="black"/>
+                        <path d="M60.7511 60.7489C56.4448 65.0552 51.1101 67.7024 45.5342 68.6907C44.5481 68.8684 43.5556 68.9933 42.559 69.0631C34.5622 69.6366 26.3666 66.8666 20.2511 60.7511C14.1355 54.6355 11.3656 46.4399 11.9369 38.441C12.0067 37.4444 12.1316 36.4519 12.3093 35.4658C13.2976 29.8899 15.9448 24.5552 20.2511 20.2489C24.5573 15.9427 29.892 13.2954 35.4679 12.3072C36.454 12.1295 37.4486 12.0067 38.4453 11.9369C46.442 11.3634 54.6355 14.1355 60.7511 20.2511C66.8666 26.3666 69.6366 34.558 69.0631 42.5547C68.9933 43.5514 68.8705 44.546 68.6928 45.5321C67.7046 51.108 65.0573 56.4427 60.7511 60.7489Z" fill="#C7F900"/>
+                        <path d="M34.9008 34.8987C30.6961 39.1034 25.5286 40.7074 19.1063 39.7996C18.2873 39.6832 17.4642 39.4779 16.5944 39.26C15.2169 38.9108 13.725 38.5363 11.9369 38.441C12.0067 37.4444 12.1316 36.4519 12.3093 35.4658C14.2794 35.5907 15.9046 36.0012 17.3224 36.3567C18.1519 36.5641 18.865 36.7439 19.5252 36.837C25.0292 37.6136 29.2424 36.3249 32.7847 32.7826C36.3271 29.2402 37.6158 25.0271 36.8392 19.5231C36.746 18.8629 36.5662 18.1498 36.3567 17.3224C36.0012 15.9046 35.5907 14.2794 35.4679 12.3072C36.454 12.1295 37.4486 12.0067 38.4453 11.9369C38.5384 13.7271 38.915 15.2169 39.26 16.5944C39.4779 17.4642 39.6853 18.2852 39.8017 19.1041C40.7074 25.5286 39.1055 30.694 34.9008 34.8987Z" fill="white"/>
+                        <path d="M69.0631 42.5547C67.275 42.4637 65.7853 42.0871 64.4077 41.7421C63.5358 41.5221 62.7148 41.3147 61.8959 41.1983C55.4714 40.2926 50.306 41.8945 46.1013 46.0992C41.8966 50.3039 40.2926 55.4714 41.2004 61.8937C41.3168 62.7127 41.5221 63.5358 41.7421 64.4077C42.0892 65.7831 42.4659 67.2771 42.559 69.0631C43.5556 68.9933 44.5481 68.8684 45.5342 68.6907C45.4093 66.7206 44.9988 65.0954 44.6433 63.6776C44.4359 62.8481 44.2582 62.1371 44.163 61.4748C43.3864 55.9708 44.6751 51.7576 48.2174 48.2153C51.7598 44.6729 55.9729 43.3842 61.4769 44.1608C62.1392 44.2561 62.8523 44.4359 63.6776 44.6433C65.0954 44.9988 66.7206 45.4093 68.6928 45.5321L69.0631 42.5547Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <img class="page15-racket-img anim-text" data-delay="400" src="assets/Group 56.png" alt="" />
+        </section>
+
+        <!-- ========== SKILLS — 隐藏大招 CD ========== -->
+        <!-- 导航 20 · 技能 hub；子页 20-1 / 20-2 / 20-3 见各 skill-panel data-nav -->
+        <section class="page page-skills" id="page-skills" data-nav="20" aria-label="隐藏大招 CD">
+            <div class="skill-stage" id="skillStage">
+
+    <div class="skill-panel skill-panel--page1 is-active" data-page="1" data-nav="20" aria-label="技能总览">
+      <div class="skill-bg" aria-hidden="true"></div>
+
+      <div class="skill-layout" data-figma="31:340">
+        <p class="skill-kicker spatial-reveal" data-order="0">如果你是一个游戏角色</p>
+        <p class="skill-headline spatial-reveal" data-order="1">你应该会有这些技能</p>
+
+        <div class="skill-icons">
+          <button type="button" class="skill-icon-item skill-icon-item--1 skill-icon-item--btn spatial-reveal app-tap" data-order="2" data-skill-target="2" aria-label="强力一击 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </div>
+          </button>
+          <button type="button" class="skill-icon-item skill-icon-item--2 skill-icon-item--center skill-icon-item--btn spatial-reveal app-tap" data-order="3" data-skill-target="3" aria-label="绝对防御 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </div>
+          </button>
+          <button type="button" class="skill-icon-item skill-icon-item--3 skill-icon-item--center skill-icon-item--btn spatial-reveal app-tap" data-order="4" data-skill-target="5" aria-label="能力觉醒 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </div>
+          </button>
+        </div>
+
+        <p class="skill-hint spatial-reveal" data-order="5">点击查看详情</p>
+      </div>
+    </div>
+
+    <div class="skill-panel skill-panel--page2" data-page="2" data-nav="20-1" aria-label="技能 强力一击">
+      <div class="skill-p2-bg" aria-hidden="true"></div>
+
+      <div class="skill-p2-flyers" id="skillP2Flyers" aria-hidden="true"></div>
+
+      <div class="skill-layout skill-layout--p2" data-figma="1204:308">
+        <nav class="skill-detail-switcher" data-order="0" data-active="2" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="3" aria-label="绝对防御">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="2" aria-label="强力一击" aria-current="true">
+            <span class="skill-p2-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+        <p class="skill-p2-badge spatial-reveal" data-order="2">
+          <span data-text="skill_name">强力一击</span>
+        </p>
+
+        <p class="skill-p2-line skill-p2-line--1 spatial-reveal" data-order="3">获得一次强化攻击</p>
+        <p class="skill-p2-line skill-p2-line--2 spatial-reveal" data-order="4">
+          打出一记超越平均球速 <span data-count="crit_threshold_pct">18.4</span>% 以上的暴击
+        </p>
+
+        <div class="skill-p2-stat skill-p2-stat--speed spatial-reveal" data-order="5">
+          <p class="skill-p2-stat__label">本场最高暴击</p>
+          <p class="skill-p2-stat__value">
+            <span
+              class="skill-p2-stat__number skill-p2-stat__number--speed"
+              data-count-idle="max_crit_speed_before"
+              data-count-cast="max_crit_speed"
+            >65</span>
+            <span class="skill-p2-stat__unit">km/h</span>
+          </p>
+        </div>
+
+        <div class="skill-p2-stat skill-p2-stat--stroke spatial-reveal" data-order="6">
+          <p class="skill-p2-stat__label">来自</p>
+          <p class="skill-p2-stat__stroke" data-text="max_crit_stroke">正手截击</p>
+        </div>
+
+        <div class="skill-p2-stat skill-p2-stat--uses spatial-reveal" data-order="7">
+          <p class="skill-p2-stat__label">使用次数</p>
+          <p class="skill-p2-stat__value">
+            <span
+              class="skill-p2-stat__number skill-p2-stat__number--uses"
+              data-count-idle="crit_usage_before"
+              data-count-cast="crit_usage_count"
+            >0</span>
+            <span class="skill-p2-stat__unit">拍</span>
+          </p>
+        </div>
+
+        <div class="skill-p2-cast-wrap spatial-reveal" data-order="8">
+          <button type="button" class="skill-p2-cast-btn app-tap" aria-label="释放技能">释放技能</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-panel skill-panel--page3" data-page="3" data-nav="20-2" aria-label="技能 绝对防御">
+      <div class="skill-p3-bg" aria-hidden="true"></div>
+      <div class="skill-p3-cast-vignette" aria-hidden="true"></div>
+
+      <div class="skill-layout skill-layout--p3" data-figma="61:663">
+        <nav class="skill-detail-switcher" data-order="0" data-active="3" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="3" aria-label="绝对防御" aria-current="true">
+            <span class="skill-p3-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="2" aria-label="强力一击">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+        <p class="skill-p3-badge spatial-reveal" data-order="1">
+          <span data-text="skill_name_p3">绝对防御</span>
+        </p>
+
+        <p class="skill-p3-tagline spatial-reveal" data-order="2">开启护盾，将所有来球全部接下</p>
+
+        <div class="skill-p3-spiral-stage" id="skillP3Stage" aria-hidden="true">
+          <div class="skill-p3-balls"></div>
+          <div class="skill-p3-shield-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="skill-p3-stats spatial-reveal" data-order="3">
+          <p class="skill-p3-stat-label skill-p3-stat-label--rally">本场最长回合</p>
+          <p class="skill-p3-stat-num skill-p3-stat-num--shots">
+            <span
+              data-count="longest_rally_shots"
+              data-count-idle="longest_rally_shots_before"
+              data-count-cast="longest_rally_shots"
+            >18</span>
+          </p>
+          <p class="skill-p3-stat-unit skill-p3-stat-unit--shots">拍</p>
+
+          <p class="skill-p3-stat-label skill-p3-stat-label--duration">持续时长</p>
+          <p class="skill-p3-stat-num skill-p3-stat-num--duration">
+            <span
+              data-count="longest_rally_duration"
+              data-count-idle="longest_rally_duration_before"
+              data-count-cast="longest_rally_duration"
+            >36.6</span>
+          </p>
+          <p class="skill-p3-stat-unit skill-p3-stat-unit--sec">秒</p>
+        </div>
+
+        <div class="skill-p3-cast-wrap spatial-reveal" data-order="4">
+          <button type="button" class="skill-p3-cast-btn app-tap" aria-label="施放技能">施放技能</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-panel skill-panel--page5" data-page="5" data-nav="20-3" aria-label="技能 能力觉醒">
+      <div class="skill-p5-bg" aria-hidden="true"></div>
+
+      <div class="skill-layout skill-layout--p5" data-figma="31:347">
+        <nav class="skill-detail-switcher" data-order="0" data-active="5" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="2" aria-label="强力一击">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="5" aria-label="能力觉醒" aria-current="true">
+            <span class="skill-p5-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball spatial-reveal app-tap" data-skill-switch="3" aria-label="绝对防御">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+        <p class="skill-p5-badge spatial-reveal" data-order="1">
+          <span data-text="skill_name_p5">能力觉醒</span>
+        </p>
+
+        <p class="skill-p5-tagline spatial-reveal" data-order="2">使用后获得一种拍型的巨大进步</p>
+
+        <div class="skill-p5-arrow-bg" id="skillP5Arrow" aria-hidden="true">
+          <img src="assets/page-skills/p5-arrow-polygon.svg" width="551" height="925" alt="">
+        </div>
+
+        <div class="skill-p5-chart spatial-reveal" id="skillP5Stage" data-order="3">
+          <div class="skill-p5-bar skill-p5-bar--mistake">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="mistake_rate_before_pct">21.63</span>%</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="mistake_rate_after_pct">17.89</span>%</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">失误率</p>
+          </div>
+
+          <div class="skill-p5-bar skill-p5-bar--speed">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="avg_speed_before_kmh">63.89</span>km/h</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="avg_speed_after_kmh">68.19</span> km/h</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">球速</p>
+          </div>
+
+          <div class="skill-p5-bar skill-p5-bar--deep">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="deep_rate_before_pct">43.93</span>%</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="deep_rate_after_pct">50.20</span>%</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">深球率</p>
+          </div>
+        </div>
+
+        <div class="skill-p5-cast-wrap spatial-reveal" data-order="4">
+          <button type="button" class="skill-p5-cast-btn app-tap" aria-label="释放技能">释放技能</button>
+        </div>
+      </div>
+    </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========== COACH 第1页 ========== -->
+        <section class="page page-coach page-coach-1" id="page-coach-1" data-coach-page="1" aria-label="教练碎碎念 开场">
+            <div class="coach-stage">
+    <div class="coach-panel coach-panel--page1 is-active" data-page="1" aria-label="教练碎碎念 开场">
+      <div class="coach-bg" aria-hidden="true"></div>
+
+      <div class="coach-alert spatial-reveal" data-order="0">
+        <img class="coach-alert__img" src="assets/coach-alert.svg" alt="">
+      </div>
+
+      <p class="coach-line coach-line--1 spatial-reveal" data-order="1">以下来自教练的碎碎念</p>
+      <p class="coach-line coach-line--2 spatial-reveal" data-order="2">请做好心理准备</p>
+    </div>
+            </div>
+        </section>
+        <!-- ========== COACH 第2页 ========== -->
+        <section class="page page-coach page-coach-2" id="page-coach-2" data-coach-page="2" data-nav="22" aria-label="教练碎碎念 第二页">
+            <div class="coach-stage">
+    <div class="coach-panel coach-panel--page2 is-active" data-page="2" data-figma="65:777" aria-label="教练碎碎念 第二页">
+      <div class="coach-p22-bg" aria-hidden="true">
+        <img class="coach-p22-paper-texture" src="assets/coach-p22-paper-texture.png" width="440" height="769" alt="">
+        <div class="coach-p22-head-blue-wrap">
+          <img class="coach-p22-head-blue" src="assets/coach-p22-head-blue.svg" alt="">
+        </div>
+      </div>
+
+      <img class="coach-p22-quote spatial-reveal" data-order="0" src="assets/coach-p22-quote.svg" width="188" height="142" alt="" aria-hidden="true">
+
+      <h1 class="coach-p22-headline spatial-reveal" data-order="0">
+        <span class="coach-p22-headline__line">老毛病</span>
+        <span class="coach-p22-headline__line coach-p22-headline__line--2">  咱能改改吗？</span>
+      </h1>
+
+      <p class="coach-p22-lead spatial-reveal" data-order="1">四堂课了，</p>
+      <p class="coach-p22-prefix spatial-reveal" data-order="2">你一共打框了</p>
+      <p class="coach-p22-number spatial-reveal" data-order="3">
+        <span data-count="frame_hits_total">209</span>
+      </p>
+      <p class="coach-p22-suffix spatial-reveal" data-order="4">次</p>
+      <p class="coach-p22-question spatial-reveal" data-order="5">你球拍的甜区和网球刚离婚吗？</p>
+
+      <div class="coach-p22-paper-wrap" aria-hidden="true">
+        <div class="coach-p22-paper-bleed">
+          <img class="coach-p22-paper" src="assets/coach-p22-paper-card.svg" alt="">
+        </div>
+      </div>
+
+      <div class="coach-p22-racket" aria-hidden="true">
+        <div class="coach-p22-racket__stage">
+          <img class="coach-p22-racket__img" src="assets/coach-p22-racket.png" width="407" height="269" alt="">
+          <div
+            class="coach-p22-area"
+            data-area-cx="120.60256958007812"
+            data-area-cy="161.30803680419922"
+            data-area-rx="92.14553833007812"
+            data-area-ry="72.74358367919922"
+            data-area-rot="13.034543460122498"
+            aria-hidden="true"
+          ></div>
+          <svg
+            class="coach-p22-dots"
+            id="coachRacketDots"
+            viewBox="0 0 406.5 268.5"
+            preserveAspectRatio="xMidYMid meet"
+            aria-hidden="true"
+          ></svg>
+        </div>
+      </div>
+
+      <p class="coach-p22-foot--1 spatial-reveal" data-order="6">正手的失误率居然比第二次训练还高</p>
+      <p class="coach-p22-foot--reach spatial-reveal" data-order="7">达到了</p>
+      <p class="coach-p22-foot--rate spatial-reveal" data-order="8">
+        <span data-count="forehand_mistake_rate_pct">20</span>%
+      </p>
+      <p class="coach-p22-foot--2 spatial-reveal" data-order="9">比刚学的正、反手截击还高！！！</p>
+      <p class="coach-p22-foot--3 spatial-reveal" data-order="10">喜新厌旧的人！！！</p>
+    </div>
+            </div>
+        </section>
+        <!-- ========== COACH 第3页 ========== -->
+        <section class="page page-coach page-coach-3" id="page-coach-3" data-coach-page="3" aria-label="教练碎碎念 第三页">
+            <div class="coach-stage">
+    <div class="coach-panel coach-panel--page3 is-active" data-page="3" data-figma="74:801" aria-label="教练碎碎念 第三页">
+      <div class="coach-p23-bg" aria-hidden="true">
+        <img class="coach-p23-paper-texture" src="assets/coach-p23-paper-texture.png" width="440" height="769" alt="">
+        <div class="coach-p23-head-red-wrap">
+          <img class="coach-p23-head-red" src="assets/coach-p23-head-red.svg" alt="">
+        </div>
+      </div>
+
+      <img class="coach-p23-quote spatial-reveal" data-order="0" src="assets/coach-p23-quote.svg" width="188" height="142" alt="" aria-hidden="true">
+
+      <h1 class="coach-p23-headline spatial-reveal" data-order="0">
+        <span class="coach-p23-headline__line">  电量告急？</span>
+        <span class="coach-p23-headline__line">  心不在焉！</span>
+      </h1>
+
+      <p class="coach-p23-lead coach-p23-lead--1 spatial-reveal" data-order="1">从失误率来看，你好像越打越累，</p>
+      <p class="coach-p23-lead coach-p23-lead--2 spatial-reveal" data-order="2">越打失误越多。但是真相只有一个：</p>
+      <p class="coach-p23-prefix spatial-reveal" data-order="3">到训练后期,</p>
+      <p class="coach-p23-emphasis spatial-reveal" data-order="4">你的心率反而下降了</p>
+
+      <div class="coach-p23-paper-wrap" aria-hidden="true">
+        <div class="coach-p23-paper-bleed">
+          <img class="coach-p23-paper" src="assets/coach-p23-paper-card.svg" alt="">
+        </div>
+      </div>
+
+      <div class="coach-p23-chart-wrap spatial-reveal" data-order="5" aria-hidden="true">
+        <div class="coach-p23-chart-bleed">
+          <svg
+            class="coach-p23-chart__svg"
+            viewBox="0 0 426.505 320.003"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              class="coach-p23-chart__path"
+              d="M10.0027 310L57.0027 191L79.5027 183.5L115.003 21.5002L134.003 75.0002L153.003 10.0002L164.503 34.5002L184.503 21.5002L203.503 34.5002L218.003 10.0002L248.503 65.5002L279.503 10.0002L288.503 34.5002L323.003 21.5002L339.503 34.5002L348.003 10.0002L355.003 42.0002L416.503 191"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="coach-p23-ball" aria-hidden="true">
+        <img class="coach-p23-ball__img" src="assets/coach-p23-ball.svg" alt="">
+      </div>
+
+      <p class="coach-p23-foot spatial-reveal" data-order="6">你这是一拍把自己的心打飞到球场外了！</p>
+    </div>
+            </div>
+        </section>
+        <!-- ========== COACH 第4页 ========== -->
+        <section class="page page-coach page-coach-4" id="page-coach-4" data-coach-page="4" data-nav="24" data-figma="74:814" aria-label="教练碎碎念 第四页">
+            <div class="coach-stage">
+    <div class="coach-panel coach-panel--page4 is-active" data-page="4" data-figma="74:814" aria-label="教练碎碎念 第四页">
+      <div class="coach-page4-bg" aria-hidden="true">
+        <div class="coach-page4-diagonal-wrap court-transition" data-figma="74:815">
+          <div class="coach-page4-diagonal-inner court-rotator">
+            <div class="coach-page4-diagonal-bleed">
+              <img class="coach-page4-diagonal court-img" src="assets/tennis-field.svg" width="853" height="1816" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coach-page4-quote" data-figma="74:816" aria-hidden="true">
+        <img src="assets/coach-p24/quote.svg" width="188" height="142" alt="">
+      </div>
+
+      <div class="coach-page4-court" aria-hidden="true" data-figma="74:831">
+        <svg
+          class="coach-page4-court__svg"
+          viewBox="0 0 519.583 1065.11"
+          preserveAspectRatio="none"
+          fill="none"
+          aria-hidden="true"
+        >
+          <g class="coach-page4-pierce-line spatial-reveal" data-order="2" data-pierce-ux="0.0838" data-pierce-uy="-0.9965" data-pierce-dist="160">
+            <line x1="97.5412" y1="1065.07" x2="185.541" y2="18.0719" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8" />
+          </g>
+          <g class="coach-page4-pierce-line spatial-reveal" data-order="3" data-pierce-ux="0.7998" data-pierce-uy="-0.6003" data-pierce-dist="140">
+            <line x1="16.0412" y1="817.072" x2="501.041" y2="453.072" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8" />
+          </g>
+          <g class="coach-page4-pierce-line spatial-reveal" data-order="4" data-pierce-ux="0.9966" data-pierce-uy="-0.0825" data-pierce-dist="120">
+            <line x1="0.0412449" y1="625.572" x2="519.541" y2="582.572" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8" />
+          </g>
+          <g class="coach-page4-pierce-line spatial-reveal" data-order="5" data-pierce-ux="-0.1438" data-pierce-uy="-0.9896" data-pierce-dist="150">
+            <line x1="378.041" y1="1053.07" x2="225.041" y2="0.0718946" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8" />
+          </g>
+          <g class="coach-page4-pierce-line spatial-reveal" data-order="6" data-pierce-ux="0.7482" data-pierce-uy="-0.6635" data-pierce-dist="130">
+            <line x1="26.0412" y1="908.072" x2="507.541" y2="481.072" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 8" />
+          </g>
+        </svg>
+      </div>
+
+      <p class="coach-page4-intro spatial-reveal" data-order="0" data-figma="74:818">其实，我一直有一句话想对你说</p>
+      <p class="coach-page4-title spatial-reveal" data-order="1" data-figma="74:817">你的球路，太单一</p>
+
+      <p class="coach-page4-row coach-page4-row--1 spatial-reveal" data-order="7">
+        <span class="coach-page4-row__lead">你的回球有</span>
+        <span class="coach-page4-row__pct">
+          <span data-count="direction_cross_pct">64.1</span>%
+        </span>
+        <span class="coach-page4-row__tail">是斜线</span>
+      </p>
+
+      <p class="coach-page4-row coach-page4-row--2 spatial-reveal" data-order="8">
+        <span class="coach-page4-row__lead">只有</span>
+        <span class="coach-page4-row__pct">
+          <span data-count="direction_straight_pct">27.3</span>%
+        </span>
+        <span class="coach-page4-row__tail">是直线</span>
+      </p>
+
+      <p class="coach-page4-row coach-page4-row--3 spatial-reveal" data-order="9">
+        <span class="coach-page4-row__lead">追身更是只有仅仅</span>
+        <span class="coach-page4-row__pct">
+          <span data-count="direction_body_pct">8.6</span>%
+        </span>
+      </p>
+    </div>
+            </div>
+        </section>
+        <!-- ========== P25 · 完结撒花 · Figma 74:832 ========== -->
+        <section class="page page-outro page-outro-1" id="page-outro-1" data-outro-page="1" data-nav="25" aria-label="完结撒花">
+            <div class="outro-stage">
+    <div class="outro-panel outro-panel--page1 is-active" data-page="1" data-figma="74:832" aria-label="完结撒花">
+      <div class="outro-p25-bg" aria-hidden="true">
+        <div class="outro-p25-vector-wrap court-transition" data-figma="74:833">
+          <div class="outro-p25-vector-inner court-rotator">
+            <div class="outro-p25-vector-bleed">
+              <img class="outro-p25-vector court-img" src="assets/tennis-field.svg" width="853" height="1816" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="outro-p25-kicker anim-text" data-delay="0" data-figma="74:834">本次训练结算到此</p>
+      <p class="outro-p25-title anim-text" data-delay="120" data-figma="74:836">完结撒花！</p>
+
+      <div class="outro-p25-closing anim-text" data-delay="240" data-figma="74:835">
+        <p class="outro-p25-closing__line">你的修炼之路尚</p>
+        <p class="outro-p25-closing__line">未完待续……</p>
+      </div>
+    </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+        <!-- P9–P11 共用场景 · Figma 46:515 / 46:592 / 37:454 -->
+        <div class="sp-scene-overlay" id="spSceneOverlay" aria-hidden="true">
+            <div class="sp-scene" id="spScene" data-layout="p10">
+                <div class="sp-scene__bg" data-layer="bg">
+                    <div class="sp-scene__grass" data-layer="grass" aria-hidden="true"></div>
+                    <div class="sp-scene__tennis-field" data-layer="tennis-field">
+                        <img class="sp-scene__tennis-field-img" src="assets/spatial/tennis-field.png" width="392" height="829" alt="">
+                        <div class="sp-landings" id="landingsPage1"></div>
+                        <div class="sp-landings sp-landings--miss" id="landingsPage2"></div>
+                    </div>
+                    <div class="sp-scene__nest" data-layer="nest" aria-hidden="true">
+                        <div class="sp-scene__nest-media">
+                            <img src="assets/spatial/nest.svg" width="498" height="67" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/spatial-session4.js"></script>
+    <script src="spatial-scene.js"></script>
+    <script src="p11-run-page.js"></script>
+    <script src="spatial.js"></script>
+    <script src="intro-basket.js"></script>
+    <script src="data/rain-intensity-series.js"></script>
+    <script src="intro-basket-rain.js"></script>
+    <script src="intro-cake.js"></script>
+    <script src="hr-heart-transition.js"></script>
+    <script src="data/skills-power.js"></script>
+    <script src="data/skills-defense.js"></script>
+    <script src="data/skills-awakening.js"></script>
+    <script src="skill-p2-power.js"></script>
+    <script src="skill-p3-shield.js"></script>
+    <script src="skill-p3-defense.js"></script>
+    <script src="skill-p5-awakening.js"></script>
+    <script src="data/coach-whisper.js"></script>
+    <script src="data/coach-racket-rim.js"></script>
+    <script src="data/coach-hr-series.js"></script>
+    <script src="coach-p23-chart.js"></script>
+    <script src="coach.js"></script>
+    <script src="data/outro-outlook.js"></script>
+    <script src="outro.js"></script>
+    <script src="skills.js"></script>
+    <script src="page15.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+

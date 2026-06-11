@@ -1,0 +1,123 @@
+/* P24/P25 同一 Tennis Field · Figma 74:815 / 74:833 · 页内渲染 + 翻页旋转 */
+
+#page-coach-4 .coach-panel--page4 {
+  background: transparent !important;
+}
+
+#page-coach-4.page-coach-4,
+#page-outro-1.page-outro {
+  background: #2ca867 !important;
+}
+
+#page-coach-4 .coach-page4-diagonal-wrap.court-transition,
+#page-outro-1 .outro-p25-vector-wrap.court-transition {
+  will-change: transform, left, top;
+}
+
+#page-coach-4 .coach-page4-diagonal-inner.court-rotator,
+#page-outro-1 .outro-p25-vector-inner.court-rotator {
+  position: relative;
+  width: 852.881px;
+  height: 1815.891px;
+  transform: rotate(30deg);
+  transform-origin: center center;
+}
+
+#page-outro-1 .outro-p25-vector-inner.court-rotator {
+  transform: rotate(0deg);
+}
+
+#page-coach-4 .coach-page4-diagonal-bleed,
+#page-outro-1 .outro-p25-vector-bleed {
+  position: absolute;
+  inset: -0.35% -0.35% -0.17% -0.35%;
+}
+
+#page-coach-4 .coach-page4-diagonal,
+#page-outro-1 .outro-p25-vector {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* P25 球场 · Figma 74:833 */
+#page-outro-1 .outro-p25-vector-wrap {
+  position: absolute;
+  left: -370px;
+  top: -789px;
+  width: 852.881px;
+  height: 1815.891px;
+}
+
+#page-coach-4.exit-to-outro .coach-page4-intro,
+#page-coach-4.exit-to-outro .coach-page4-title,
+#page-coach-4.exit-to-outro .coach-page4-row,
+#page-coach-4.exit-to-outro .coach-page4-quote,
+#page-coach-4.exit-to-outro .coach-page4-court {
+  opacity: 0 !important;
+  transition: opacity 0.4s ease;
+}
+
+html.html--court-p24-p25 #page-coach-4,
+html.html--court-p24-p25 #page-outro-1 {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-mask-image: none !important;
+}
+
+html.html--court-p24-p25 #page-coach-4 .coach-page4-bg {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-mask-image: none !important;
+}
+
+html.html--court-p24-p25 #page-coach-4 .coach-stage,
+html.html--court-p24-p25 #page-outro-1 .outro-stage {
+  overflow: visible !important;
+}
+
+html.html--court-p24-p25 #page-outro-1 .outro-p25-vector-inner {
+  animation: court-p24-p25-unrotate 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+html.html--court-p24-p25 #page-outro-1 .outro-p25-vector-wrap {
+  animation: court-p24-p25-wrap-morph 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+@keyframes court-p24-p25-unrotate {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes court-p24-p25-wrap-morph {
+  from {
+    left: -32.16px;
+    top: -815.42px;
+  }
+  to {
+    left: -370px;
+    top: -789px;
+  }
+}
+
+#page-outro-1.active .outro-p25-kicker,
+#page-outro-1.active .outro-p25-title,
+#page-outro-1.active .outro-p25-closing {
+  animation: outro-p25-text-rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+}
+
+@keyframes outro-p25-text-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

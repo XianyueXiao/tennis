@@ -1,0 +1,9 @@
+<svg width="551.248" height="1035.549" viewBox="0 0 551.248 1035.55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M310.493 0L551.248 240.75H397.184C433.98 363.211 486.003 605.277 456.349 793.43C424.067 998.257 402.245 1039.95 395.369 1035.2L0 957.146C79.817 812.165 228.573 474.867 212.911 240.75H69.7377L310.493 0Z" fill="url(#skill-p5-arrow-grad)"/>
+  <defs>
+    <linearGradient id="skill-p5-arrow-grad" x1="275.624" y1="0" x2="275.624" y2="1035.55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0073D1"/>
+      <stop offset="1" stop-color="#A0D4FF"/>
+    </linearGradient>
+  </defs>
+</svg>

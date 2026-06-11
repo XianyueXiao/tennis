@@ -1,0 +1,84 @@
+/* P25 · Figma 74:832 · 440×956 · 完结撒花 · 仅 #page-outro-1 */
+
+#page-outro-1.page-outro {
+  color: #fff;
+}
+
+#page-outro-1 .outro-panel--page1 {
+  color: #fff;
+}
+
+#page-outro-1 .outro-stage {
+  transform: translateX(-50%) scale(clamp(0.01, var(--base-scale, 1), 3));
+  overflow: visible;
+}
+
+#page-outro-1 .outro-panel--page1 {
+  overflow: visible;
+}
+
+#page-outro-1 .outro-p25-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* Figma 74:834 · Text/Regular 20px */
+#page-outro-1 .outro-p25-kicker {
+  position: absolute;
+  left: 78px;
+  top: 429px;
+  z-index: 1;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Figma 74:836 · Number/Large 64px */
+#page-outro-1 .outro-p25-title {
+  position: absolute;
+  left: 78px;
+  top: 462px;
+  z-index: 1;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Figma 74:835 · Text/Large 32px */
+#page-outro-1 .outro-p25-closing {
+  position: absolute;
+  left: 141px;
+  top: 822px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #fff;
+}
+
+#page-outro-1 .outro-p25-closing__line {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#page-outro-1.active .outro-p25-kicker.anim-text,
+#page-outro-1.active .outro-p25-title.anim-text,
+#page-outro-1.active .outro-p25-closing.anim-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+

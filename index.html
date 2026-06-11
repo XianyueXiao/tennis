@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhone 预览模式</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            background-color: #1a1a1a;
+        }
+
+        .preview-page-nav {
+            position: relative;
+            z-index: 100;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            width: 52px;
+            height: 100vh;
+            height: 100dvh;
+            margin: 0;
+            padding: 10px 6px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: rgba(12, 12, 12, 0.92);
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+            scrollbar-width: thin;
+        }
+
+        .preview-page-nav__btn {
+            flex-shrink: 0;
+            width: 36px;
+            height: 28px;
+            margin: 0 auto;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 12px;
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+            cursor: pointer;
+        }
+
+        .preview-page-nav__btn:hover {
+            background: rgba(255, 255, 255, 0.14);
+            color: #fff;
+        }
+
+        .preview-page-nav__btn.is-active {
+            background: #0079dc;
+            border-color: #4da3ff;
+            color: #fff;
+        }
+
+        .preview-page-nav__btn--sub {
+            width: 40px;
+            height: 22px;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: rgba(255, 255, 255, 0.55);
+            border-style: dashed;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .preview-page-nav__btn--sub:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .preview-page-nav__btn--sub.is-active {
+            background: #0056a8;
+            border-style: solid;
+            color: #fff;
+        }
+
+        .phone-stage {
+            flex: 1;
+            min-width: 0;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-container {
+            position: relative;
+            width: 450px;
+            height: 920px;
+        }
+
+        /* 实际的网页在底层 */
+        .phone-screen {
+            position: absolute;
+            top: 23px;
+            left: 24px;
+            width: 402px;
+            height: 874px;
+            border: none;
+            border-radius: 46px; 
+            background-color: #fff;
+            z-index: 1; /* 图层在下 */
+            overflow: hidden;
+        }
+
+        /* P2 溢出球可越过样机底边绘制，由外框遮住死角 */
+        .phone-screen.phone-screen--basket-overflow {
+            overflow: visible;
+        }
+
+        /* 隐藏滚动条 */
+        .phone-screen::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 手机外框与灵动岛在顶层 */
+        .phone-frame-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2; /* 图层在上，盖住网页的死角并显示灵动岛 */
+            pointer-events: none; /* 关键：让鼠标/触摸事件穿透外框，这样你依然可以在里面滑动网页 */
+            /* mix-blend-mode: darken; 如果 Figma 导出的图屏幕是死白而不是透明，可以打开这行代码去白底 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-stage">
+        <div class="phone-container">
+            <iframe class="phone-screen" src="index1.html" title="Web App Preview" scrolling="no"></iframe>
+            <img class="phone-frame-overlay" src="assets/iphone-frame.png" alt="phone mockup">
+        </div>
+    </div>
+
+    <script src="preview-nav.js"></script>
+    <script>
+        /* 外层预览页不滚动，滚轮/触摸翻页仅在 iframe 内生效 */
+        document.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
+        document.addEventListener('touchmove', (e) => {
+            if (!e.target.closest('.phone-screen')) e.preventDefault();
+        }, { passive: false });
+    </script>
+
+</body>
+</html>

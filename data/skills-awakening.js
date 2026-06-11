@@ -1,0 +1,11 @@
+window.SKILLS_AWAKENING = {
+  session_id: "train_004",
+  skill_name: "能力觉醒",
+  awakened_stroke: "反手",
+  mistake_rate_before_pct: 21.63,
+  mistake_rate_after_pct: 17.89,
+  avg_speed_before_kmh: 63.89,
+  avg_speed_after_kmh: 68.19,
+  deep_rate_before_pct: 43.93,
+  deep_rate_after_pct: 50.2,
+};

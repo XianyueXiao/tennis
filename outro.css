@@ -1,0 +1,218 @@
+/* Scoped from webapp/style.css for page-outro */
+.page.page-outro {
+  background: #fff;
+  overflow: hidden;
+  color: #000;
+  container-type: normal;
+}
+.page-outro .outro-stage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 440px;
+  max-width: 440px;
+  height: 956px;
+  transform: translateX(-50%) scale(var(--base-scale, 1));
+  transform-origin: top center;
+  overflow: hidden;
+  z-index: 1;
+  isolation: isolate;
+  font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.spatial-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.spatial-reveal.is-visible {
+  opacity: 1;
+}
+
+.spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ══════════════════════════════════════
+   结尾展望（Figma 279:2 起）
+   ══════════════════════════════════════ */
+
+
+
+
+
+.outro-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #fff;
+}
+
+.outro-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.outro-panel.is-active {
+  pointer-events: auto;
+}
+
+/* P25 · Figma 74:832 → outro-p25.css（#page-outro-1） */
+
+.outro-layout {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+}
+
+.outro-intro {
+  position: absolute;
+  left: 24.773%;
+  top: 105px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  color: #000;
+}
+
+.outro-intro__line,
+.outro-intro__spacer {
+  margin: 0;
+}
+
+.outro-intro__spacer {
+  height: 1.36em;
+}
+
+.outro-pct {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.36;
+  letter-spacing: -0.64px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.outro-pct--from {
+  left: 39.773%;
+  top: 189px;
+}
+
+.outro-pct--to {
+  left: 39.773%;
+  top: 303px;
+}
+
+.outro-pct--proj {
+  left: 29.318%;
+  top: 613px;
+}
+
+.outro-drop {
+  position: absolute;
+  left: 29.318%;
+  top: 276px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+}
+
+.outro-copy {
+  position: absolute;
+  left: 49.545%;
+  top: 478px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #000;
+}
+
+.outro-bottom-lead {
+  position: absolute;
+  left: 15.455%;
+  top: 593px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: pre;
+}
+
+.outro-bottom-tail {
+  position: absolute;
+  left: 60.455%;
+  top: 658px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.outro-panel .spatial-reveal {
+  z-index: 2;
+}
+
+.outro-panel .spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spatial-reveal.is-animating.outro-drop,
+.spatial-reveal.is-visible.outro-drop,
+.spatial-reveal.is-animating.outro-copy,
+.spatial-reveal.is-visible.outro-copy {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.outro-drop,
+.spatial-reveal.outro-copy {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.outro-intro,
+.spatial-reveal.outro-pct,
+.spatial-reveal.outro-bottom-lead,
+.spatial-reveal.outro-bottom-tail {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.outro-intro,
+.spatial-reveal.is-visible.outro-intro,
+.spatial-reveal.is-animating.outro-pct,
+.spatial-reveal.is-visible.outro-pct,
+.spatial-reveal.is-animating.outro-bottom-lead,
+.spatial-reveal.is-visible.outro-bottom-lead,
+.spatial-reveal.is-animating.outro-bottom-tail,
+.spatial-reveal.is-visible.outro-bottom-tail {
+  transform: translateY(0);
+}

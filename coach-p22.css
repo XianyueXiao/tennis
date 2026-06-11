@@ -1,0 +1,312 @@
+/* P22 · Figma 65:777 · 440×956 · 仅 .coach-panel--page2 */
+
+.coach-panel--page2 .coach-p22-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #fff;
+  pointer-events: none;
+}
+
+/* Figma 65:778 paper texture */
+.coach-panel--page2 .coach-p22-paper-texture {
+  position: absolute;
+  left: 0;
+  top: 187px;
+  width: 440px;
+  height: 769px;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+}
+
+/* Figma 65:796 Head · 65:797 Vector 2 */
+.coach-panel--page2 .coach-p22-head-blue-wrap {
+  position: absolute;
+  left: -1px;
+  top: -10px;
+  width: 443px;
+  height: 313px;
+  transform: scaleY(-1);
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.coach-panel--page2 .coach-p22-head-blue {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figma 65:798 */
+.coach-panel--page2 .coach-p22-quote {
+  position: absolute;
+  left: 26px;
+  top: 22px;
+  width: 188px;
+  height: 142px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Figma 65:799 */
+.coach-panel--page2 .coach-p22-headline {
+  position: absolute;
+  left: 13px;
+  top: 110px;
+  width: 415px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+}
+
+.coach-panel--page2 .coach-p22-headline__line {
+  display: block;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.coach-panel--page2 .coach-p22-headline__line--2 {
+  white-space: pre;
+}
+
+/* Figma 65:786 text1 */
+.coach-panel--page2 .coach-p22-lead {
+  position: absolute;
+  left: 69px;
+  top: 310px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.coach-panel--page2 .coach-p22-prefix {
+  position: absolute;
+  left: 110px;
+  top: 347px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #828282;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:791 */
+.coach-panel--page2 .coach-p22-number {
+  position: absolute;
+  left: 235px;
+  top: 312px;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.coach-panel--page2 .coach-p22-suffix {
+  position: absolute;
+  left: 351px;
+  top: 347px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #828282;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:787 */
+.coach-panel--page2 .coach-p22-question {
+  position: absolute;
+  left: 69px;
+  top: 382px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:793 paper */
+.coach-panel--page2 .coach-p22-paper-wrap {
+  position: absolute;
+  left: 31px;
+  top: 429px;
+  width: 389.25px;
+  height: 270.2px;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.coach-panel--page2 .coach-p22-paper-bleed {
+  position: absolute;
+  top: -10.36%;
+  right: -8.22%;
+  bottom: -13.32%;
+  left: -8.22%;
+}
+
+.coach-panel--page2 .coach-p22-paper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figma 65:794 Tennis Racket */
+.coach-panel--page2 .coach-p22-racket {
+  position: absolute;
+  left: 102px;
+  top: 409px;
+  width: 406.5px;
+  height: 268.5px;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.coach-panel--page2 .coach-p22-racket__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.coach-panel--page2 .coach-p22-racket__img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Figma 65:795 area · 击球位点坐标基准，不显示 */
+.coach-panel--page2 .coach-p22-area {
+  position: absolute;
+  left: 28.45703125px;
+  top: 88.564453125px;
+  width: 184.29107666015625px;
+  height: 145.48716735839844px;
+  transform: rotate(13.034543460122498deg);
+  transform-origin: center center;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.coach-panel--page2 .coach-p22-dots {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.coach-panel--page2 .coach-p22-dot {
+  fill: #dc3131;
+}
+
+/* Figma 65:779 text2 */
+/* Figma 65:780 */
+.coach-panel--page2 .coach-p22-foot--1 {
+  position: absolute;
+  left: 62px;
+  top: 743px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #828282;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:784 */
+.coach-panel--page2 .coach-p22-foot--reach {
+  position: absolute;
+  left: 118px;
+  top: 816px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:785 */
+.coach-panel--page2 .coach-p22-foot--rate {
+  position: absolute;
+  left: 184px;
+  top: 779px;
+  width: 131px;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:781 */
+.coach-panel--page2 .coach-p22-foot--2 {
+  position: absolute;
+  left: 90px;
+  top: 851px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 65:782 */
+.coach-panel--page2 .coach-p22-foot--3 {
+  position: absolute;
+  left: 149px;
+  top: 886px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}

@@ -1,0 +1,30 @@
+<svg width="440" height="519" viewBox="0 0 440 519" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="440" height="519" fill="#F5F5F5"/>
+<g id="iPhone 16 &#38; 17 Pro Max - 86" clip-path="url(#clip0_0_1)">
+<rect width="440" height="956" transform="translate(0 -373)" fill="url(#paint0_linear_0_1)"/>
+<g id="graph">
+<path id="fill" d="M89.5112 226.5C71.6089 258.1 22.3778 281.667 0 289.5V509H471C386.886 509 429.509 245 368.873 245C308.236 245 330.614 13 233.884 13C137.154 13 111.889 187 89.5112 226.5Z" fill="url(#paint1_linear_0_1)"/>
+<path id="Line" d="M-6.5 291C15.5 288.5 71.6089 258.1 89.5112 226.5C111.889 187 137.154 13 233.884 13C330.614 13 308.236 245 368.873 245C429.509 245 386.886 509 471 509" stroke="#ADDAFF" stroke-width="20"/>
+<g id="&#228;&#186;&#164;&#228;&#186;&#146;&#231;&#130;&#185;&#228;&#189;&#141;">
+<circle id="Ellipse 132" cx="365" cy="243" r="10" fill="#54B2FF" stroke="white" stroke-width="4"/>
+<circle id="Ellipse 133" cx="129" cy="114" r="10" fill="#54B2FF" stroke="white" stroke-width="4"/>
+<circle id="Ellipse 135" cx="312" cy="116" r="10" fill="#54B2FF" stroke="white" stroke-width="4"/>
+<circle id="Ellipse 134" cx="89" cy="229" r="10" fill="#54B2FF" stroke="white" stroke-width="4"/>
+<circle id="Ellipse 131" cx="232" cy="12" r="10" fill="#54B2FF" stroke="white" stroke-width="4"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="220" y1="0" x2="220" y2="956" gradientUnits="userSpaceOnUse">
+<stop stop-color="#004BB4"/>
+<stop offset="1" stop-color="#0079DC"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1" x1="235.5" y1="3.68774" x2="235.5" y2="509" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4FA2D6"/>
+<stop offset="1" stop-color="#0073D1" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="440" height="956" fill="white" transform="translate(0 -373)"/>
+</clipPath>
+</defs>
+</svg>

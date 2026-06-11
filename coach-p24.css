@@ -1,0 +1,47 @@
+/* P24 · Figma 74:814 · 440×956 · 仅 #page-coach-4 */
+
+#page-coach-4.page-coach-4 {
+  color: #fff;
+  overflow: visible !important;
+}
+
+#page-coach-4 .coach-stage,
+#page-coach-4 .coach-page4-bg {
+  overflow: visible !important;
+}
+
+#page-coach-4 .coach-page4-quote {
+  position: absolute;
+  left: 50%;
+  top: 61px;
+  width: 188px;
+  height: 142px;
+  margin: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#page-coach-4.active .coach-page4-quote {
+  opacity: 1;
+  transition: opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1) 0.08s;
+}
+
+#page-coach-4 .coach-page4-quote img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#page-coach-4 .coach-page4-court {
+  top: -64px;
+  height: 1065px;
+}
+
+#page-coach-4 .coach-page4-court__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
+}

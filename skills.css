@@ -1,0 +1,2210 @@
+/* Skills module (from webapp/style.css, scoped to .page-skills) */
+/* ══════════════════════════════════════
+   技能板块（Figma 31:340 hub · 详情 225:185 起）
+   ══════════════════════════════════════ */
+
+.page.page-skills {
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+  background-color: transparent;
+  overflow: hidden;
+  color: #fff;
+  container-type: normal;
+}
+
+.spatial-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.spatial-reveal.is-visible {
+  opacity: 1;
+}
+
+.skill-panel--page1.is-active .spatial-reveal.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.page-skills.skill-scroll-coach {
+  background: #fff;
+}
+
+.page-skills.skill-mode-detail {
+  overflow: hidden;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+.page-skills .skill-stage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 440px;
+  max-width: 440px;
+  height: 956px;
+  transform: translateX(-50%) scale(var(--base-scale, 1));
+  transform-origin: top center;
+  overflow: hidden;
+  color: #fff;
+  font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  z-index: 1;
+  isolation: isolate;
+  transition: opacity 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+.skill-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  will-change: transform, opacity;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 0.45s;
+}
+
+.skill-panel.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition:
+    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s;
+}
+
+/* Figma 31:340 · 440×956 */
+.skill-panel--page1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.skill-layout {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+}
+
+.skill-kicker {
+  position: absolute;
+  left: 50%;
+  top: 94px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-headline {
+  position: absolute;
+  left: 50%;
+  top: 132px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.skill-icon-item {
+  position: absolute;
+  width: 169px;
+  height: 169px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.skill-icon-item--center {
+  transform: translateX(-50%);
+}
+
+.skill-icon-item--btn {
+  cursor: pointer;
+}
+
+.skill-icon-item--soon {
+  cursor: default;
+  pointer-events: auto;
+}
+
+.skill-stage.is-fly-active {
+  overflow: visible;
+}
+
+.skill-icon-item.is-flying {
+  pointer-events: none;
+}
+
+.skill-icon-item.is-flying .skill-icon-item__bob {
+  visibility: hidden;
+}
+
+.skill-icon-item--soon.is-nudge {
+  animation: skillSoonNudge 0.36s ease;
+}
+
+.skill-icon-item__bob {
+  position: relative;
+  width: 169px;
+  height: 169px;
+  animation: skillIconFloat 3.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.skill-icon-item__bob.is-fly-paused {
+  animation-play-state: paused;
+  transform: translateY(0);
+}
+
+/* Figma 31:340 · 169×169 · image19 左缘定位；image20/22 中心点 + --center */
+.skill-icon-item--1 {
+  left: 154px;
+  top: 308px;
+}
+
+.skill-icon-item--1 .skill-icon-item__bob {
+  animation-duration: 3.2s;
+  animation-delay: 0s;
+}
+
+.skill-icon-item--2 {
+  left: calc(50% - 84.5px); /* 中心 x = 50% − 84.5 */
+  top: 410px;
+}
+
+.skill-icon-item--2 .skill-icon-item__bob {
+  animation-duration: 3.6s;
+  animation-delay: 0.45s;
+}
+
+.skill-icon-item--3 {
+  left: calc(50% + 84.5px); /* 中心 x = 50% + 84.5 */
+  top: 495px;
+}
+
+.skill-icon-item--3 .skill-icon-item__bob {
+  animation-duration: 3.8s;
+  animation-delay: 0.9s;
+}
+
+.skill-icon-item__art {
+  display: block;
+  width: 169px;
+  height: 169px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes skillIconFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes skillSoonNudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+}
+
+/* 通用点击反馈 */
+.app-tap {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition:
+    transform 0.14s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+.app-tap:active:not(:disabled),
+.app-tap.is-pressed:not(:disabled) {
+  opacity: 0.82;
+}
+
+.skill-icon-item.app-tap:active:not(:disabled),
+.skill-icon-item.app-tap.is-pressed:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.skill-icon-item--center.app-tap:active:not(:disabled),
+.skill-icon-item--center.app-tap.is-pressed:not(:disabled) {
+  transform: translateX(-50%) scale(0.94);
+}
+
+.skill-close-btn.app-tap:active:not(:disabled),
+.skill-close-btn.app-tap.is-pressed:not(:disabled) {
+  transform: translateX(-50%) scale(0.9);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
+}
+
+/* 气泡飞入/飞出克隆层（挂载在 skillStage 内） */
+.skill-fly-clone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  pointer-events: none;
+  transform-origin: 0 0;
+  will-change: transform, width, height;
+  transition:
+    transform 0.52s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.52s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.52s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-fly-clone__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-fly-clone__bob {
+  animation: skillIconFloat 3.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.skill-fly-clone--1 .skill-fly-clone__bob {
+  animation-duration: 3.2s;
+  animation-delay: 0s;
+}
+
+.skill-fly-clone--2 .skill-fly-clone__bob {
+  animation-duration: 3.6s;
+  animation-delay: 0.45s;
+}
+
+.skill-fly-clone--3 .skill-fly-clone__bob {
+  animation-duration: 3.8s;
+  animation-delay: 0.9s;
+}
+
+.skill-fly-clone--4 .skill-fly-clone__bob {
+  animation-duration: 3.3s;
+  animation-delay: 0.25s;
+}
+
+.skill-fly-clone__inner .skill-icon-item__art {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-p2-hero.is-fly-hidden,
+.skill-p3-hero.is-fly-hidden,
+.skill-p4-hero.is-fly-hidden,
+.skill-p5-hero.is-fly-hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+.skill-panel--page3 .skill-close-btn,
+.skill-panel--page4 .skill-close-btn,
+.skill-panel--page5 .skill-close-btn {
+  bottom: 24px;
+}
+
+.skill-close-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  transform: translateX(-50%);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  overflow: visible;
+}
+
+.skill-close-btn.is-hint-active {
+  animation: skillClosePulse 2.2s ease-in-out infinite;
+}
+
+.skill-close-btn.is-hint-active::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: skillCloseRing 2.2s ease-in-out infinite;
+}
+
+@keyframes skillClosePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 22px rgba(255, 255, 255, 0.55),
+      0 0 0 3px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes skillCloseRing {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.22);
+    opacity: 0;
+  }
+}
+
+.skill-close-btn__x {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.skill-close-btn__x::before,
+.skill-close-btn__x::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 1.5px;
+  background: #fff;
+  border-radius: 1px;
+}
+
+.skill-close-btn__x::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.skill-close-btn__x::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.spatial-reveal.skill-close-btn {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-close-btn,
+.spatial-reveal.is-visible.skill-close-btn {
+  transform: translateX(-50%) translateY(0);
+}
+
+.skill-hint {
+  position: absolute;
+  left: 50%;
+  top: 849px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-panel .spatial-reveal {
+  z-index: 2;
+}
+
+.skill-panel .spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spatial-reveal.skill-kicker,
+.spatial-reveal.skill-headline,
+.spatial-reveal.skill-hint {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-kicker,
+.spatial-reveal.is-visible.skill-kicker,
+.spatial-reveal.is-animating.skill-headline,
+.spatial-reveal.is-visible.skill-headline,
+.spatial-reveal.is-animating.skill-hint,
+.spatial-reveal.is-visible.skill-hint {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.skill-icon-item {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.skill-icon-item--center {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-icon-item,
+.spatial-reveal.is-visible.skill-icon-item {
+  transform: translateY(0);
+}
+
+.spatial-reveal.is-animating.skill-icon-item--center,
+.spatial-reveal.is-visible.skill-icon-item--center {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 技能总页 · 默认可见，避免脚本异常时只剩背景 */
+.skill-panel--page1.is-active .spatial-reveal {
+  opacity: 1;
+}
+
+.skill-panel--page1.is-active .spatial-reveal.skill-kicker,
+.skill-panel--page1.is-active .spatial-reveal.skill-headline,
+.skill-panel--page1.is-active .spatial-reveal.skill-hint {
+  transform: translateX(-50%) translateY(0);
+}
+
+.skill-panel--page1.is-active .spatial-reveal.skill-icon-item:not(.skill-icon-item--center) {
+  transform: translateY(0);
+}
+
+.skill-panel--page1.is-active .spatial-reveal.skill-icon-item--center {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Figma 225:185 · 强力一击 */
+.skill-panel--page2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.skill-p2-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+.skill-p2-flyers {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.55s ease 0.18s;
+}
+
+.skill-panel--page2.is-active .skill-p2-flyers {
+  opacity: 1;
+}
+
+.skill-flyer {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: var(--sx);
+  top: var(--sy);
+  opacity: 0;
+  animation: skillFlyStraight var(--dur) linear forwards;
+  will-change: transform, opacity;
+}
+
+.skill-flyer__shadow {
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 91px;
+  height: 91px;
+  object-fit: contain;
+  opacity: 0.9;
+  transform: rotate(var(--shadow-rot, 0deg));
+}
+
+.skill-flyer__ball {
+  position: absolute;
+  inset: 0;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transform: rotate(var(--ball-rot, 0deg));
+}
+
+@keyframes skillFlyStraight {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy));
+    opacity: 0;
+  }
+}
+
+.skill-layout--p2 {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+}
+
+.skill-layout--p2 .skill-p2-hero {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+
+.skill-hero-bubble--p2,
+.skill-p2-hero .skill-hero-bubble {
+  width: 169px;
+  height: 169px;
+}
+
+.skill-p2-hero .skill-hero-bubble__img {
+  width: 169px;
+  height: 169px;
+}
+
+.skill-hero-bubble {
+  position: relative;
+  width: 105px;
+  height: 105px;
+}
+
+/* 详情页顶部 icon：与 hub 气泡相同的悬浮飘动 */
+.skill-p2-hero .skill-hero-bubble,
+.skill-p3-hero .skill-hero-bubble,
+.skill-p4-hero .skill-hero-bubble,
+.skill-p5-hero .skill-hero-bubble {
+  animation: skillIconFloat 3.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.skill-p2-hero .skill-hero-bubble {
+  animation-duration: 3.2s;
+  animation-delay: 0s;
+}
+
+.skill-p3-hero .skill-hero-bubble {
+  animation-duration: 3.6s;
+  animation-delay: 0.45s;
+}
+
+.skill-p4-hero .skill-hero-bubble {
+  animation-duration: 3.8s;
+  animation-delay: 0.9s;
+}
+
+.skill-p5-hero .skill-hero-bubble {
+  animation-duration: 3.3s;
+  animation-delay: 0.25s;
+}
+
+.skill-hero-bubble__img {
+  display: block;
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.skill-p2-badge {
+  position: absolute;
+  left: 161px;
+  top: 177px;
+  margin: 0;
+  transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p2-line {
+  position: absolute;
+  left: 50%;
+  width: calc(100% - 48px);
+  max-width: 380px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+}
+
+.skill-p2-line--1 {
+  top: 229px;
+}
+
+.skill-p2-line--2 {
+  top: 258px;
+}
+
+.skill-p2-stat {
+  position: absolute;
+  left: 64px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p2-stat--speed {
+  top: 442px;
+}
+
+.skill-p2-stat--stroke {
+  top: 580px;
+}
+
+.skill-p2-stat--uses {
+  top: 718px;
+}
+
+.skill-p2-stat__label {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.skill-p2-stat__value {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+
+.skill-p2-stat__number {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+}
+
+.skill-p2-stat__unit {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  transform: translateY(8px);
+}
+
+.skill-p2-stat--speed .skill-p2-stat__value {
+  margin-top: 12px;
+}
+
+.skill-p2-stat--uses .skill-p2-stat__value {
+  margin-top: 12px;
+}
+
+.skill-p2-stat__stroke {
+  margin: 12px 0 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+}
+
+.spatial-reveal.skill-detail-switcher,
+.spatial-reveal.skill-p2-badge,
+.spatial-reveal.skill-p2-stat {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.skill-p2-line {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-detail-switcher,
+.spatial-reveal.is-visible.skill-detail-switcher,
+.spatial-reveal.is-animating.skill-p2-badge,
+.spatial-reveal.is-visible.skill-p2-badge,
+.spatial-reveal.is-animating.skill-p2-stat,
+.spatial-reveal.is-visible.skill-p2-stat {
+  transform: translateY(0);
+}
+
+.spatial-reveal.is-animating.skill-p2-line,
+.spatial-reveal.is-visible.skill-p2-line {
+  transform: translateX(-50%) translateY(0);
+}
+
+.skill-p2-cast-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 860px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.skill-p2-cast-btn {
+  position: relative;
+  margin: 0;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  user-select: none;
+  transition: opacity 0.14s ease;
+}
+
+@keyframes skillP2CastBtnGlow {
+  0%,
+  100% {
+    box-shadow:
+      inset 0 0 14px rgba(255, 255, 255, 0.7),
+      0 0 10px rgba(127, 195, 255, 0.35),
+      0 0 22px rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    box-shadow:
+      inset 0 0 36px #fff,
+      0 0 22px rgba(255, 255, 255, 0.95),
+      0 0 44px rgba(127, 195, 255, 0.65),
+      0 0 64px rgba(0, 121, 220, 0.35);
+  }
+}
+
+@keyframes skillP2StatGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  }
+
+  50% {
+    text-shadow:
+      0 0 14px rgba(255, 255, 255, 0.95),
+      0 0 28px rgba(127, 195, 255, 0.6),
+      0 0 42px rgba(255, 255, 255, 0.35);
+  }
+}
+
+.skill-layout--p2.is-cast .skill-p2-cast-btn,
+.skill-p2-cast-btn.is-cast {
+  animation: skillP2CastBtnGlow 0.95s ease-in-out infinite;
+}
+
+.skill-layout--p2.is-cast .skill-p2-stat--speed .skill-p2-stat__number,
+.skill-layout--p2.is-cast .skill-p2-stat--uses .skill-p2-stat__number {
+  animation: skillP2StatGlow 0.95s ease-in-out infinite;
+}
+
+.skill-layout--p2.is-cast .skill-p2-stat--uses .skill-p2-stat__number {
+  animation-delay: 0.12s;
+}
+
+.skill-p2-cast-btn.is-pressed {
+  opacity: 1;
+}
+
+.skill-panel--page2.is-cast .skill-p2-flyers {
+  opacity: 1;
+}
+
+.spatial-reveal.skill-p2-cast-wrap {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p2-cast-wrap,
+.spatial-reveal.is-visible.skill-p2-cast-wrap {
+  transform: translateY(0);
+}
+
+/* Figma 225:196 · 绝对防御 */
+.skill-panel--page3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  overflow: visible;
+}
+
+.skill-p3-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+/* 长按施放技能 · 四周红色光晕描边 */
+.skill-p3-cast-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
+  border: 3px solid rgba(255, 55, 55, 0.85);
+  box-shadow:
+    inset 0 0 36px 12px rgba(255, 35, 35, 0.72),
+    inset 0 0 80px 32px rgba(255, 0, 0, 0.48),
+    inset 0 0 120px 48px rgba(180, 0, 0, 0.28),
+    0 0 24px 4px rgba(255, 50, 50, 0.4);
+  transition: opacity 0.12s linear;
+}
+
+.skill-p3-cast-vignette.is-fading {
+  transition: none;
+}
+
+.skill-layout--p3 .skill-p3-hero {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+
+.skill-p3-hero .skill-hero-bubble {
+  position: relative;
+  width: 169px;
+  height: 169px;
+}
+
+.skill-p3-hero .skill-hero-bubble__img {
+  width: 169px;
+  height: 169px;
+}
+
+.skill-p3-badge {
+  position: absolute;
+  left: 161px;
+  top: 177px;
+  margin: 0;
+  transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 120px;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p3-tagline {
+  position: absolute;
+  left: 75px;
+  top: 257px;
+  z-index: 3;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.skill-layout--p3 {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+  margin: 0 auto;
+}
+
+/* Figma 570:123 · Group 64 护盾舞台 -42,257 · 548.46×511.46 */
+.skill-p3-spiral-stage {
+  position: absolute;
+  left: -42px;
+  top: 257px;
+  width: 548.457px;
+  height: 511.457px;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+  opacity: 0;
+  transition: opacity 0.55s ease 0.18s;
+}
+
+.skill-panel--page3.is-active .skill-p3-spiral-stage,
+.skill-p3-spiral-stage.is-shield-active {
+  opacity: 1;
+}
+
+/* Figma 61:711 · 中央小白光圆 93×93 */
+.skill-p3-shield-glow {
+  position: absolute;
+  left: 262.5px;
+  top: 225.5px;
+  z-index: 2;
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.88);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 18px 6px rgba(255, 255, 255, 0.95),
+    0 0 36px 12px rgba(255, 255, 255, 0.45),
+    inset 0 0 16px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  transition:
+    opacity 0.45s ease,
+    transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.skill-p3-shield-glow.is-visible,
+.skill-p3-spiral-stage.is-shield-active .skill-p3-shield-glow {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Figma 570:94 · Group 62 网球螺旋 -42,280 · 548.46×488.46 */
+.skill-p3-balls {
+  position: absolute;
+  left: 0;
+  top: 23px;
+  width: 548.457px;
+  height: 488.457px;
+  z-index: 1;
+}
+
+.skill-p3-ball {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  opacity: 1;
+  will-change: left, top;
+  pointer-events: none;
+}
+
+.skill-p3-ball__shadow {
+  position: absolute;
+  left: 3.6px;
+  top: 6.5px;
+  width: 49px;
+  height: 49px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.skill-p3-ball__graphic {
+  position: absolute;
+  inset: 0;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  transform: rotate(var(--ball-rot, 0deg));
+}
+
+/* Figma 242:462 · 440×956 绝对坐标 */
+.skill-p3-stats {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.skill-p3-stat-label {
+  position: absolute;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p3-stat-label--rally {
+  left: 63px;
+  top: 741px;
+}
+
+.skill-p3-stat-label--duration {
+  left: 124px;
+  top: 810px;
+}
+
+.skill-p3-stat-num {
+  position: absolute;
+  margin: 0;
+  transform: translateX(-100%);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p3-stat-num--shots {
+  left: 265px;
+  top: 707px;
+}
+
+.skill-p3-stat-num--duration {
+  left: 341px;
+  top: 776px;
+}
+
+.skill-p3-stat-unit {
+  position: absolute;
+  margin: 0;
+  transform: translateX(-100%);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p3-stat-unit--shots {
+  left: 301px;
+  top: 732px;
+}
+
+.skill-p3-stat-unit--sec {
+  left: 377px;
+  top: 798px;
+}
+
+.spatial-reveal.skill-p3-badge {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p3-badge,
+.spatial-reveal.is-visible.skill-p3-badge {
+  transform: translateY(0);
+}
+
+.spatial-reveal.skill-p3-tagline,
+.spatial-reveal.skill-p3-stats {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p3-tagline,
+.spatial-reveal.is-visible.skill-p3-tagline,
+.spatial-reveal.is-animating.skill-p3-stats,
+.spatial-reveal.is-visible.skill-p3-stats {
+  transform: translateY(0);
+}
+
+.skill-p3-cast-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 860px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.skill-p3-cast-btn {
+  position: relative;
+  margin: 0;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  user-select: none;
+  transition: opacity 0.14s ease;
+}
+
+.skill-layout--p3.is-cast .skill-p3-cast-btn,
+.skill-p3-cast-btn.is-cast {
+  animation: skillP2CastBtnGlow 0.95s ease-in-out infinite;
+}
+
+.skill-layout--p3.is-cast .skill-p3-stat-num--shots [data-count],
+.skill-layout--p3.is-cast .skill-p3-stat-num--duration [data-count] {
+  animation: skillP2StatGlow 0.95s ease-in-out infinite;
+}
+
+.skill-layout--p3.is-cast .skill-p3-stat-num--duration [data-count] {
+  animation-delay: 0.12s;
+}
+
+.skill-p3-cast-btn.is-pressed {
+  opacity: 1;
+}
+
+.spatial-reveal.skill-p3-cast-wrap {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p3-cast-wrap,
+.spatial-reveal.is-visible.skill-p3-cast-wrap {
+  transform: translateY(0);
+}
+
+/* Figma 225:205 · 无敌时间 */
+.skill-panel--page4 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  overflow: visible;
+}
+
+.skill-stage:has(.skill-panel--page4.is-active) {
+  overflow: visible;
+}
+
+.skill-p4-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+.skill-layout--p4 {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+  margin: 0 auto;
+}
+
+.skill-p4-hero {
+  position: absolute;
+  left: 136px;
+  top: 33px;
+  width: 169px;
+  height: 169px;
+  transform: none;
+  z-index: 3;
+}
+
+.skill-p4-hero .skill-hero-bubble {
+  position: relative;
+  width: 169px;
+  height: 169px;
+}
+
+.skill-p4-hero .skill-hero-bubble__img {
+  width: 169px;
+  height: 169px;
+}
+
+.skill-p4-badge {
+  position: absolute;
+  left: 50%;
+  top: 189px;
+  margin: 0;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.skill-p4-tagline {
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  width: max-content;
+  max-width: calc(100% - 48px);
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.skill-p4-tagline--1 {
+  top: 241px; /* 标题底 229 + 12px */
+}
+
+.skill-p4-tagline--2 {
+  left: calc(50% + 0.5px);
+  top: 270px;
+}
+
+.skill-p4-plus {
+  position: absolute;
+  left: 268px;
+  top: 270px;
+  margin: 0;
+  transform: translateX(-100%);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.skill-p4-plus.is-active {
+  animation: skillP4PlusRise 920ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes skillP4PlusRise {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) translateY(16px);
+  }
+  16% {
+    opacity: 1;
+    transform: translateX(-100%) translateY(0);
+  }
+  68% {
+    opacity: 1;
+    transform: translateX(-100%) translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%) translateY(-44px);
+  }
+}
+
+.skill-p4-stat-row {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.skill-p4-stat-label {
+  position: absolute;
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p4-stat-label--prefix {
+  left: 117px;
+  top: 398px;
+  transform: translateX(-100%);
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.skill-p4-stat-label--suffix {
+  left: 280px;
+  top: 398px;
+  transform: translateX(-100%);
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.skill-p4-stat-label--duration {
+  left: 142px;
+  top: 469px;
+  font-size: 24px;
+  line-height: 1.36;
+  letter-spacing: -0.24px;
+}
+
+.skill-p4-stat-num {
+  position: absolute;
+  margin: 0;
+  transform: translateX(-100%);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p4-stat-num--shots {
+  left: 200px;
+  top: 364px;
+}
+
+.skill-p4-stat-num--duration {
+  left: 311px;
+  top: 441px;
+}
+
+.skill-p4-stat-unit {
+  position: absolute;
+  left: 347px;
+  top: 465px;
+  margin: 0;
+  transform: translateX(-100%);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p4-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.skill-p4-racket {
+  position: absolute;
+  left: 0;
+  top: 505px;
+  width: 440px;
+  height: 450px;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.skill-p4-racket__img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.skill-p4-fly-ball {
+  position: absolute;
+  left: 104.75px;
+  top: 552.75px;
+  width: 33.307px;
+  height: 33.307px;
+  transform: rotate(105deg);
+  z-index: 5;
+  pointer-events: none;
+  will-change: left, top, width, height, transform, filter;
+}
+
+.skill-p4-fly-ball img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Figma 638:489 · 光晕 · 最上层 */
+.skill-p4-light-wrap {
+  position: absolute;
+  left: -201px;
+  top: 269px;
+  width: 922.703px;
+  height: 892.622px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(30deg);
+  transform-origin: 58% 68%;
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: normal;
+}
+
+.skill-p4-light {
+  display: block;
+  width: 705.548px;
+  height: 623.363px;
+  object-fit: contain;
+}
+
+.skill-p4-light-wrap.is-pulsing {
+  animation: skillP4LightBurst 920ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes skillP4LightBurst {
+  0% {
+    opacity: 0;
+    transform: rotate(30deg) scale(0.28);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(30deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(30deg) scale(1.14);
+  }
+}
+
+/* Figma 639:490 · 击打白圆 · 最上层 */
+.skill-p4-hit-spot {
+  position: absolute;
+  left: 214px;
+  top: 640px;
+  width: 107.949px;
+  height: 107.949px;
+  z-index: 31;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.skill-p4-hit-spot.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.skill-p4-hit-spot__flash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 96px;
+  height: 96px;
+  margin: -48px 0 0 -48px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 255, 255, 0.28) 58%,
+    rgba(255, 255, 255, 0.62) 78%,
+    rgba(255, 255, 255, 0.85) 100%
+  );
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
+}
+
+.skill-p4-hit-spot__flash.is-active {
+  animation: skillP4HitFlash 240ms ease-out forwards;
+}
+
+@keyframes skillP4HitFlash {
+  0% {
+    opacity: 0;
+    transform: scale(0.82);
+  }
+  32% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+}
+
+.spatial-reveal.skill-p4-hero {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p4-hero,
+.spatial-reveal.is-visible.skill-p4-hero {
+  transform: translateY(0);
+}
+
+.spatial-reveal.skill-p4-badge {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p4-badge,
+.spatial-reveal.is-visible.skill-p4-badge {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.skill-p4-tagline {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.skill-p4-tagline--2 {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p4-tagline,
+.spatial-reveal.is-visible.skill-p4-tagline,
+.spatial-reveal.is-animating.skill-p4-tagline--2,
+.spatial-reveal.is-visible.skill-p4-tagline--2 {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.skill-p4-stat-row {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p4-stat-row,
+.spatial-reveal.is-visible.skill-p4-stat-row {
+  transform: translateY(0);
+}
+
+/* Figma 31:347 / 31:367 · 能力觉醒 */
+.skill-panel.skill-panel--page5 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  overflow: visible;
+}
+
+.skill-stage:has(.skill-panel--page5.is-active) {
+  overflow: visible;
+}
+
+.skill-p5-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%);
+}
+
+.skill-layout--p5 {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Figma 详情顶栏 · 三球排布随当前子页变化（非固定左中右顺序） */
+.skill-detail-switcher {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.skill-detail-switcher__ball {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  top: 41px;
+  width: 130px;
+  height: 130px;
+  opacity: 0.5;
+  transform: none;
+  pointer-events: auto;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    opacity 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    left 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-detail-switcher__hero {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-detail-switcher__hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* 20-1 强力一击 · Figma 31:413 / 1204:308 */
+.skill-detail-switcher[data-active="2"] [data-skill-switch="2"] {
+  left: 136px;
+  top: 21px;
+  width: 169px;
+  height: 169px;
+  opacity: 1;
+}
+
+.skill-detail-switcher[data-active="2"] [data-skill-switch="3"] {
+  left: 30px;
+}
+
+.skill-detail-switcher[data-active="2"] [data-skill-switch="5"] {
+  left: 280px;
+}
+
+/* 20-2 绝对防御 · Figma 1:1491 */
+.skill-detail-switcher[data-active="3"] [data-skill-switch="3"] {
+  left: 136px;
+  top: 21px;
+  width: 169px;
+  height: 169px;
+  opacity: 1;
+}
+
+.skill-detail-switcher[data-active="3"] [data-skill-switch="5"] {
+  left: 20px;
+}
+
+.skill-detail-switcher[data-active="3"] [data-skill-switch="2"] {
+  left: 289px;
+}
+
+/* 20-3 能力觉醒 · Figma 31:347 */
+.skill-detail-switcher[data-active="5"] [data-skill-switch="5"] {
+  left: 136px;
+  top: 21px;
+  width: 169px;
+  height: 169px;
+  opacity: 1;
+}
+
+.skill-detail-switcher[data-active="5"] [data-skill-switch="2"] {
+  left: 26px;
+}
+
+.skill-detail-switcher[data-active="5"] [data-skill-switch="3"] {
+  left: 290px;
+}
+
+.skill-detail-switcher__ball.is-fly-hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.skill-detail-switcher__hero.is-fly-hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+.skill-p2-hero,
+.skill-p3-hero,
+.skill-p5-hero {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-p5-badge {
+  position: absolute;
+  left: 161px;
+  top: 177px;
+  margin: 0;
+  transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.skill-p5-tagline {
+  position: absolute;
+  left: 50%;
+  top: 257px;
+  margin: 0;
+  width: max-content;
+  max-width: calc(100% - 48px);
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.skill-p5-arrow-bg {
+  position: absolute;
+  left: -93.46px;
+  top: 97.69px;
+  width: 719.958px;
+  height: 1014.232px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(168px);
+  pointer-events: none;
+  z-index: 0;
+  transition:
+    opacity 1.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.skill-p5-arrow-bg img {
+  display: block;
+  width: 551.248px;
+  height: 924.982px;
+  max-width: none;
+  transform: rotate(-11.17deg);
+}
+
+.skill-layout--p5.is-cast .skill-p5-arrow-bg {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-p5-chart {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.skill-p5-bar {
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.skill-p5-bar__value {
+  position: absolute;
+  left: 50%;
+  width: max-content;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p5-bar__val {
+  display: inline-block;
+  transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-p5-bar__val--after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(8px);
+  opacity: 0;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar__val--before {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar__val--after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.skill-p5-bar__fill {
+  position: absolute;
+  left: 50%;
+  width: 45px;
+  transform: translateX(-50%);
+  border-radius: 120px 120px 0 0;
+  background: linear-gradient(180deg, var(--p5-bar-from) 0%, var(--p5-bar-to) 100%);
+  transition:
+    top 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: top, height;
+}
+
+.skill-p5-bar__tick {
+  position: absolute;
+  left: 50%;
+  top: 713px;
+  width: 45px;
+  transform: translateX(-50%);
+  height: 4px;
+  background: #fff;
+}
+
+.skill-p5-bar__label {
+  position: absolute;
+  left: 50%;
+  top: 738px;
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.skill-p5-bar--mistake {
+  left: 148.5px;
+}
+
+.skill-p5-bar--mistake .skill-p5-bar__value {
+  top: 446px;
+}
+
+.skill-p5-bar--mistake .skill-p5-bar__fill {
+  top: 478px;
+  height: 237px;
+  --p5-bar-from: #7fc3ff;
+  --p5-bar-to: rgba(0, 75, 180, 0);
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--mistake .skill-p5-bar__value {
+  top: 478px;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--mistake .skill-p5-bar__fill {
+  top: 507px;
+  height: 208px;
+  --p5-bar-from: #35bb97;
+  --p5-bar-to: rgba(255, 255, 255, 0);
+}
+
+.skill-p5-bar--speed {
+  left: 227.5px;
+}
+
+.skill-p5-bar--speed .skill-p5-bar__value {
+  top: 342px;
+}
+
+.skill-p5-bar--speed .skill-p5-bar__fill {
+  top: 374px;
+  height: 341px;
+  --p5-bar-from: #7fc3ff;
+  --p5-bar-to: rgba(0, 75, 180, 0);
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--speed .skill-p5-bar__value {
+  top: 319px;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--speed .skill-p5-bar__fill {
+  top: 352px;
+  height: 363px;
+  --p5-bar-from: #ff5858;
+  --p5-bar-to: rgba(255, 255, 255, 0);
+}
+
+.skill-p5-bar--deep {
+  left: 304.5px;
+}
+
+.skill-p5-bar--deep .skill-p5-bar__value {
+  top: 394px;
+}
+
+.skill-p5-bar--deep .skill-p5-bar__fill {
+  top: 426px;
+  height: 289px;
+  --p5-bar-from: #7fc3ff;
+  --p5-bar-to: rgba(0, 75, 180, 0);
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--deep .skill-p5-bar__value {
+  top: 377px;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--deep .skill-p5-bar__fill {
+  top: 410px;
+  height: 305px;
+  --p5-bar-from: #ff5858;
+  --p5-bar-to: rgba(255, 255, 255, 0);
+}
+
+.skill-p5-cast-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 860px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.skill-p5-cast-btn {
+  position: relative;
+  margin: 0;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  user-select: none;
+  transition: opacity 0.14s ease;
+}
+
+@keyframes skillP5CastBtnGlow {
+  0%,
+  100% {
+    box-shadow:
+      inset 0 0 14px rgba(255, 255, 255, 0.7),
+      0 0 10px rgba(127, 195, 255, 0.35),
+      0 0 22px rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    box-shadow:
+      inset 0 0 36px #fff,
+      0 0 22px rgba(255, 255, 255, 0.95),
+      0 0 44px rgba(127, 195, 255, 0.65),
+      0 0 64px rgba(0, 121, 220, 0.35);
+  }
+}
+
+@keyframes skillP5BarGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 14px rgba(255, 255, 255, 0.85))
+      drop-shadow(0 0 28px rgba(127, 195, 255, 0.55))
+      drop-shadow(0 0 40px rgba(255, 255, 255, 0.35));
+  }
+}
+
+@keyframes skillP5BarValueGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  }
+
+  50% {
+    text-shadow:
+      0 0 12px rgba(255, 255, 255, 0.9),
+      0 0 24px rgba(127, 195, 255, 0.55);
+  }
+}
+
+.skill-layout--p5.is-cast .skill-p5-cast-btn,
+.skill-p5-cast-btn.is-cast {
+  animation: skillP5CastBtnGlow 0.95s ease-in-out infinite;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar__fill {
+  animation: skillP5BarGlow 0.95s ease-in-out infinite;
+  will-change: filter;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--speed .skill-p5-bar__fill {
+  animation-delay: 0.12s;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--deep .skill-p5-bar__fill {
+  animation-delay: 0.24s;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar__value {
+  animation: skillP5BarValueGlow 0.95s ease-in-out infinite;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--speed .skill-p5-bar__value {
+  animation-delay: 0.12s;
+}
+
+.skill-p5-chart.is-cast .skill-p5-bar--deep .skill-p5-bar__value {
+  animation-delay: 0.24s;
+}
+
+.skill-p5-cast-btn.is-pressed {
+  opacity: 1;
+}
+
+.spatial-reveal.skill-detail-switcher,
+.spatial-reveal.skill-p5-badge {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-detail-switcher,
+.spatial-reveal.is-visible.skill-detail-switcher,
+.spatial-reveal.is-animating.skill-p5-badge,
+.spatial-reveal.is-visible.skill-p5-badge {
+  transform: translateY(0);
+}
+
+.spatial-reveal.skill-p5-tagline {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p5-tagline,
+.spatial-reveal.is-visible.skill-p5-tagline {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.skill-p5-chart {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p5-chart,
+.spatial-reveal.is-visible.skill-p5-chart {
+  transform: translateY(0);
+}
+
+.spatial-reveal.skill-p5-cast-wrap {
+  transform: translateY(22px);
+}
+
+.spatial-reveal.is-animating.skill-p5-cast-wrap,
+.spatial-reveal.is-visible.skill-p5-cast-wrap {
+  transform: translateY(0);
+}
+

@@ -1,0 +1,236 @@
+/* P23 · Figma 74:801 · 440×956 · 仅 .coach-panel--page3 */
+
+.coach-panel--page3 .coach-p23-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #fff;
+  pointer-events: none;
+}
+
+/* Figma 74:802 */
+.coach-panel--page3 .coach-p23-paper-texture {
+  position: absolute;
+  left: 0;
+  top: 187px;
+  width: 440px;
+  height: 769px;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+}
+
+/* Figma 74:803 Vector 2 */
+.coach-panel--page3 .coach-p23-head-red-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 443px;
+  height: 313px;
+  transform: scaleY(-1);
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.coach-panel--page3 .coach-p23-head-red {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figma 74:804 */
+.coach-panel--page3 .coach-p23-quote {
+  position: absolute;
+  left: 27px;
+  top: 32px;
+  width: 188px;
+  height: 142px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Figma 74:805 */
+.coach-panel--page3 .coach-p23-headline {
+  position: absolute;
+  left: 46px;
+  top: 120px;
+  width: 351px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+}
+
+.coach-panel--page3 .coach-p23-headline__line {
+  display: block;
+  margin: 0;
+  white-space: pre;
+}
+
+/* Figma 74:806 */
+.coach-panel--page3 .coach-p23-lead--1 {
+  position: absolute;
+  left: 78px;
+  top: 347px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 74:810 */
+.coach-panel--page3 .coach-p23-lead--2 {
+  position: absolute;
+  left: 78px;
+  top: 383px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 74:807 */
+.coach-panel--page3 .coach-p23-prefix {
+  position: absolute;
+  left: 78px;
+  top: 451px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: -0.2px;
+  color: #828282;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 74:808 */
+.coach-panel--page3 .coach-p23-emphasis {
+  position: absolute;
+  left: 109px;
+  top: 481px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Figma 74:811 paper */
+.coach-panel--page3 .coach-p23-paper-wrap {
+  position: absolute;
+  left: 31px;
+  top: 538px;
+  width: 389.25px;
+  height: 270.2px;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.coach-panel--page3 .coach-p23-paper-bleed {
+  position: absolute;
+  top: -10.36%;
+  right: -8.22%;
+  bottom: -13.32%;
+  left: -8.22%;
+}
+
+.coach-panel--page3 .coach-p23-paper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figma 74:812 Vector 51 */
+.coach-panel--page3 .coach-p23-chart-wrap {
+  position: absolute;
+  left: -26px;
+  top: 560px;
+  width: 406.5px;
+  height: 300px;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.coach-panel--page3 .coach-p23-chart-bleed {
+  position: absolute;
+  top: -3.33%;
+  right: -2.46%;
+  bottom: -3.33%;
+  left: -2.46%;
+}
+
+.coach-panel--page3 .coach-p23-chart__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.coach-panel--page3 .coach-p23-chart__path {
+  fill: none;
+  stroke: #dc3131;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Figma 74:813 ball · 位置由 coach-p23-chart.js 沿路径计算 */
+.coach-panel--page3 .coach-p23-ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 63.025px;
+  height: 63.025px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0;
+  will-change: left, top, opacity;
+}
+
+.coach-panel--page3 .coach-p23-ball.is-visible {
+  opacity: 1;
+}
+
+.coach-panel--page3 .coach-p23-ball__img {
+  display: block;
+  width: 51.46px;
+  height: 51.46px;
+  transform: rotate(105deg);
+  will-change: transform;
+}
+
+/* Figma 74:809 */
+.coach-panel--page3 .coach-p23-foot {
+  position: absolute;
+  left: 49px;
+  top: 884px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000;
+  white-space: nowrap;
+  z-index: 2;
+}

@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" viewBox="0 0 858.881 1821.89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tennis-field">
+<path d="M855.881 3H3V1818.89H855.881V3Z" fill="url(#paint0_linear_tennis_field)"/>
+<path d="M105.903 1818.89V3M752.978 1818.89V3M105.903 485.511H752.978M105.903 1336.39H752.978M429.437 1818.89V1778.84M429.437 43.0469V3M429.437 1335.83V484.951M3 3H855.881V1818.89H3V3Z" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_tennis_field" x1="425.116" y1="1000.02" x2="425.116" y2="1627.6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0258BA"/>
+<stop offset="1" stop-color="#1E8FEA"/>
+</linearGradient>
+</defs>
+</svg>

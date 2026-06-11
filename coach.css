@@ -1,0 +1,430 @@
+/* Scoped from webapp/style.css for page-coach */
+.page.page-coach {
+  background: #fff;
+  overflow: hidden;
+  color: #000;
+  container-type: normal;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  clip-path: inset(0);
+  transform: translateZ(0);
+}
+.page-coach .coach-stage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 440px;
+  max-width: 440px;
+  height: 956px;
+  transform: translateX(-50%) scale(var(--base-scale, 1));
+  transform-origin: top center;
+  overflow: hidden;
+  z-index: 1;
+  isolation: isolate;
+  font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.spatial-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.spatial-reveal.is-visible {
+  opacity: 1;
+}
+
+.spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ══════════════════════════════════════
+   教练碎碎念（Figma 225:231 起）
+   ══════════════════════════════════════ */
+
+
+
+
+
+.coach-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #fff;
+}
+
+.coach-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: none;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.coach-panel--page1 {
+  z-index: 1;
+}
+
+.coach-panel--page2 {
+  z-index: 1;
+  background: #fff;
+}
+
+.coach-panel--page3 {
+  z-index: 1;
+  background: #fff;
+}
+
+.coach-panel--page4 {
+  z-index: 1;
+  background: transparent;
+  overflow: visible;
+}
+
+.coach-panel--page1 .coach-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #fff;
+}
+
+.coach-panel.is-active {
+  pointer-events: auto;
+}
+
+.coach-panel.is-fading-out {
+  transition: opacity 0.38s ease;
+}
+
+.coach-alert {
+  position: absolute;
+  left: calc(50% + 1px);
+  top: 293px;
+  width: 206px;
+  height: 133px;
+  transform: translateX(-50%);
+}
+
+.coach-alert__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.coach-line {
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  color: #000;
+}
+
+.coach-line--1 {
+  top: 478px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.coach-line--2 {
+  top: 514px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+}
+
+/* P22 · Figma 65:777 → coach-p22.css */
+
+.coach-quote-open {
+  position: absolute;
+  left: 26px;
+  top: 22px;
+  width: 188px;
+  height: 142px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.coach-headline {
+  position: absolute;
+  left: 50%;
+  top: 110px;
+  margin: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.coach-headline__line {
+  display: block;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  white-space: nowrap;
+}
+
+/* P23 · Figma 74:801 → coach-p23.css */
+
+/* ── 第四页 · Figma 225:254 ── */
+
+.coach-page4-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #2ca867;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  clip-path: inset(0);
+  transform: translateZ(0);
+}
+
+.coach-page4-diagonal-wrap {
+  position: absolute;
+  left: -429px;
+  top: -907px;
+  width: 1646.562px;
+  height: 1999.048px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.coach-page4-diagonal-inner {
+  width: 852.881px;
+  height: 1815.891px;
+  transform: rotate(30deg);
+  transform-origin: center center;
+}
+
+.coach-page4-diagonal {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.coach-page4-court {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 519.583px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.coach-page4-court__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
+}
+
+.coach-page4-pierce-line {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.coach-page4-pierce-line.is-animating {
+  transition:
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.45s ease;
+}
+
+.coach-page4-intro {
+  position: absolute;
+  left: 50%;
+  top: 105px;
+  margin: 0;
+  transform: translateX(-50%) translateY(22px);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.coach-page4-title {
+  position: absolute;
+  left: 50%;
+  top: 148px;
+  margin: 0;
+  transform: translateX(-50%) translateY(22px);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.coach-page4-row {
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  z-index: 2;
+}
+
+.coach-page4-row__lead,
+.coach-page4-row__tail {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+
+.coach-page4-row__pct {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.64px;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.coach-page4-row--1 .coach-page4-row__lead {
+  left: 97px;
+  top: 605px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--1 .coach-page4-row__pct {
+  left: 245.5px;
+  top: 569px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--1 .coach-page4-row__tail {
+  left: 374px;
+  top: 605px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--2 .coach-page4-row__lead {
+  left: 65px;
+  top: 683px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--2 .coach-page4-row__pct {
+  left: 183.5px;
+  top: 649px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--2 .coach-page4-row__tail {
+  left: 312px;
+  top: 683px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--3 .coach-page4-row__lead {
+  left: 159.5px;
+  top: 763px;
+  transform: translateX(-50%);
+}
+
+.coach-page4-row--3 .coach-page4-row__pct {
+  left: 318.5px;
+  top: 729px;
+  transform: translateX(-50%);
+}
+
+.coach-panel .spatial-reveal {
+  z-index: 2;
+}
+
+.coach-panel .spatial-reveal.is-animating {
+  transition:
+    opacity 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.coach-panel--page2 .spatial-reveal.is-animating,
+.coach-panel--page3 .spatial-reveal.is-animating,
+.coach-panel--page4 .spatial-reveal.is-animating {
+  transition:
+    opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spatial-reveal.is-animating.coach-alert,
+.spatial-reveal.is-visible.coach-alert,
+.spatial-reveal.is-animating.coach-line,
+.spatial-reveal.is-visible.coach-line,
+.spatial-reveal.is-animating.coach-headline,
+.spatial-reveal.is-visible.coach-headline,
+.spatial-reveal.is-animating.coach-foot--3,
+.spatial-reveal.is-visible.coach-foot--3,
+.spatial-reveal.is-animating.coach-foot--rate,
+.spatial-reveal.is-visible.coach-foot--rate {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.is-animating.coach-page4-intro,
+.spatial-reveal.is-visible.coach-page4-intro,
+.spatial-reveal.is-animating.coach-page4-title,
+.spatial-reveal.is-visible.coach-page4-title,
+.spatial-reveal.is-animating.coach-page4-row__pct,
+.spatial-reveal.is-visible.coach-page4-row__pct {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.coach-page4-intro,
+.spatial-reveal.coach-page4-title {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.coach-page4-pierce-line.is-visible,
+.spatial-reveal.is-visible.coach-page4-pierce-line {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.spatial-reveal.is-animating.coach-page4-row__lead,
+.spatial-reveal.is-visible.coach-page4-row__lead,
+.spatial-reveal.is-animating.coach-page4-row__tail,
+.spatial-reveal.is-visible.coach-page4-row__tail {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.coach-page4-row__lead,
+.spatial-reveal.coach-page4-row__tail {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.is-animating.coach-page4-row__pct,
+.spatial-reveal.is-visible.coach-page4-row__pct {
+  transform: translateX(-50%) translateY(0);
+}
+
+.spatial-reveal.coach-page4-row__pct {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.spatial-reveal.coach-alert,
+.spatial-reveal.coach-line,
+.spatial-reveal.coach-headline,
+.spatial-reveal.coach-foot--3,
+.spatial-reveal.coach-foot--rate {
+  transform: translateX(-50%) translateY(22px);
+}

@@ -1,0 +1,12 @@
+{
+  "session_id": "train_004",
+  "lessons": 4,
+  "frame_hits_total": 209,
+  "forehand_mistake_rate_pct": 20,
+  "direction_cross_pct": 64.1,
+  "direction_straight_pct": 27.3,
+  "direction_body_pct": 8.6,
+  "smash_rally_shots": 25,
+  "smash_rally_seconds": 66.9,
+  "smash_frame_shot_id": "S469992"
+}

@@ -1,0 +1,842 @@
+
+
+===== CHUNK 0 len=1675 =====
+        <section class="page page-basket" id="page-basket" data-nav="2" data-figma="225:4" aria-label="开场 击球统计"
+            data-training-minutes="66" data-hit-count="1500" data-court-area-m2="261.4">
+            <div class="page-basket__layout">
+                <div class="page-basket__stat fade-in-up">
+                    <p class="page-basket__kicker">本次训练你一共打了</p>
+                    <p class="page-basket__number" data-count="1500">0</p>
+                    <p class="page-basket__unit">拍</p>
+                </div>
+
+                <img class="page-basket__back" src="assets/page-basket/basket-back.svg" width="347" height="275" alt="" aria-hidden="true">
+
+                <canvas class="page-basket__canvas page-basket__canvas--back" aria-hidden="true"></canvas>
+                <canvas class="page-basket__canvas page-basket__canvas--front" aria-hidden="true"></canvas>
+
+                <img class="page-basket__front" src="assets/page-basket/basket-front.svg" width="455" height="301" alt="" aria-hidden="true">
+
+                <div class="page-basket__rain-layer" aria-hidden="true">
+                    <div class="page-basket__rain-dim"></div>
+                    <canvas class="page-basket__rain-canvas" aria-hidden="true"></canvas>
+                    <div class="page-basket__rain-copy">
+                        <p class="page-basket__rain-headline">
+                            相当于局部地区下了一场<span class="page-basket__rain-level" data-rain-level>小型</span>的雨
+                        </p>
+                        <p class="page-basket__rain-formula" data-rain-formula></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+===== CHUNK 1 len=921 =====
+                <img class="page-basket__front" src="assets/page-basket/basket-front.svg" width="455" height="301" alt="" aria-hidden="true">
+            </div>
+
+            <div class="page-basket__rain-layer" aria-hidden="true">
+                <div class="page-basket__rain-dim"></div>
+                <canvas class="page-basket__rain-canvas" aria-hidden="true"></canvas>
+                <div class="page-basket__rain-copy">
+                    <p class="page-basket__rain-headline">
+                        <span class="page-basket__kicker page-basket__rain-text">相当于局部地区下了一场</span><span class="page-basket__number page-basket__rain-level" data-rain-level>小型</span><span class="page-basket__kicker page-basket__rain-text">的雨</span>
+                    </p>
+                    <p class="page-basket__kicker page-basket__rain-formula" data-rain-formula></p>
+                </div>
+            </div>
+        </section>
+
+===== CHUNK 2 len=746 =====
+            <div class="page-basket__rain-layer" aria-hidden="true">
+                <div class="page-basket__rain-dim"></div>
+                <canvas class="page-basket__rain-canvas" aria-hidden="true"></canvas>
+                <div class="page-basket__rain-headline">
+                    <span class="page-basket__kicker page-basket__rain-line1">相当于在局部地区下了一场</span>
+                    <span class="page-basket__rain-line2">
+                        <span class="page-basket__number page-basket__rain-level" data-rain-level>小型</span><span class="page-basket__kicker page-basket__rain-text">的雨</span>
+                    </span>
+                </div>
+                <p class="page-basket__rain-formula" data-rain-formula></p>
+            </div>
+
+===== CHUNK 3 len=1083 =====
+            </div>
+        </section>
+
+        <!-- 导航 3 · 降雨隐喻 -->
+        <section class="page page-basket-rain" id="page-basket-rain" data-nav="3" aria-label="降雨隐喻 · 毛毛雨"
+            data-training-minutes="66" data-hit-count="1500" data-court-area-m2="261.4">
+            <div class="page-basket__rain-layer" aria-hidden="true">
+                <div class="page-basket__rain-dim"></div>
+                <canvas class="page-basket__rain-canvas" aria-hidden="true"></canvas>
+                <div class="page-basket__rain-headline">
+                    <span class="page-basket__kicker page-basket__rain-line1">相当于在局部地区下了一场</span>
+                    <span class="page-basket__rain-line2">
+                        <span class="page-basket__number page-basket__rain-level">毛毛雨</span>
+                    </span>
+                </div>
+                <p class="page-basket__rain-formula" data-rain-formula></p>
+            </div>
+        </section>
+
+        <!-- 导航 4 · 训练总览（时长 / 回合 / 强度） -->
+        <section class="page page-1" id="page-1" data-nav="4" aria-label="训练总览 · 时长/回合/强度">
+
+===== CHUNK 4 len=802 =====
+                <div class="page-basket__rain-headline">
+                    <span class="page-basket__kicker page-basket__rain-line1">相当于在局部地区下了一场</span>
+                    <span class="page-basket__rain-line2">
+                        <span class="page-basket__number page-basket__rain-level">毛毛雨</span>
+                    </span>
+                    <p class="page-basket__rain-formula" data-rain-formula></p>
+                </div>
+                <div class="page-basket__rain-chart" data-rain-chart aria-hidden="true">
+                    <canvas class="page-basket__rain-chart-canvas" aria-hidden="true"></canvas>
+                </div>
+                <button type="button" class="page-basket__rain-cta" data-rain-cta>
+                    查看本次降雨情况
+                </button>
+            </div>
+
+===== CHUNK 5 len=1479 =====
+        </section>
+
+        <!-- 导航 4 · 训练强度蛋糕 · Figma 4:6 -->
+        <section class="page page-cake" id="page-cake" data-nav="4" data-figma="4:6" aria-label="训练强度 · 打废网球">
+            <div class="page-cake__layout">
+                <div class="page-cake__headline fade-in-up">
+                    <p class="page-cake__kicker">这一场，你的训练强度</p>
+                    <div class="page-cake__value-row">
+                        <span class="page-cake__lead">打废了</span>
+                        <span class="page-cake__fraction">1/7</span>
+                        <span class="page-cake__tail">个网球</span>
+                    </div>
+                </div>
+                <img class="page-cake__racket fade-in-up" src="assets/page-cake/racket.png" alt="" style="animation-delay: 0.12s;">
+                <img class="page-cake__cake-back fade-in-up" src="assets/page-cake/cake-back.png" alt="" style="animation-delay: 0.18s;">
+                <img class="page-cake__cake-front fade-in-up" src="assets/page-cake/cake-front.png" alt="" style="animation-delay: 0.22s;">
+                <img class="page-cake__plate fade-in-up" src="assets/page-cake/plate.png" alt="" style="animation-delay: 0.26s;">
+                <button type="button" class="page-cake__cta fade-in-up" style="animation-delay: 0.34s;">吃一块蛋糕</button>
+            </div>
+        </section>
+
+        <!-- 导航 5 · 训练总览（时长 / 回合 / 强度） -->
+        <section class="page page-1" id="page-1" data-nav="5" aria-label="训练总览 · 时长/回合/强度">
+
+===== CHUNK 6 len=1064 =====
+                <div class="page-cake__scene">
+                    <img class="page-cake__plate fade-in-up" src="assets/page-cake/plate.png" alt="" style="animation-delay: 0.12s;">
+                    <img class="page-cake__cake-back fade-in-up" src="assets/page-cake/cake-back.png" alt="" style="animation-delay: 0.16s;">
+                    <div class="page-cake__racket-wrap fade-in-up" style="animation-delay: 0.2s;">
+                        <img class="page-cake__racket" src="assets/page-cake/racket.png" alt="">
+                    </div>
+                    <img class="page-cake__cake-front fade-in-up" src="assets/page-cake/cake-front.png" alt="" style="animation-delay: 0.24s;">
+                </div>
+                <div class="page-cake__outcome" aria-hidden="true">
+                    <p class="page-cake__outcome-line1">你切下了1/7个8寸蛋糕</p>
+                    <p class="page-cake__outcome-line2">你真是乐于分享！</p>
+                </div>
+                <button type="button" class="page-cake__cta fade-in-up" style="animation-delay: 0.34s;">吃一块蛋糕</button>
+
+===== CHUNK 7 len=697 =====
+                <button type="button" class="page-basket__rain-cta" data-rain-cta>
+                    查看本次降雨情况
+                </button>
+            </div>
+        </section>
+
+        <!-- 导航 4 · 降雨统计图 -->
+        <section class="page page-basket-rain-chart" id="page-basket-rain-chart" data-nav="4" aria-label="降雨统计 · 时段降雨量">
+            <div class="page-basket__rain-chart" data-rain-chart aria-hidden="true">
+                <canvas class="page-basket__rain-chart-canvas" aria-hidden="true"></canvas>
+            </div>
+        </section>
+
+        <!-- 导航 5 · 训练强度蛋糕 · Figma 4:6 -->
+        <section class="page page-cake" id="page-cake" data-nav="5" data-figma="8:5" aria-label="训练强度 · 打废网球">
+
+===== CHUNK 8 len=1927 =====
+                <div class="page-basket__rain-headline">
+                    <div class="page-basket__rain-heading">
+                        <p class="page-basket__rain-line1">相当于在局部地区下了一场</p>
+                        <p class="page-basket__rain-level">毛毛雨</p>
+                    </div>
+                    <div class="page-basket__rain-stats" data-rain-stats aria-hidden="true">
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">标准网球场</span>
+                            <span class="page-basket__rain-stat-value" data-rain-court-area>261.4</span>
+                            <span class="page-basket__rain-stat-suffix">m2</span>
+                        </div>
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">训练</span>
+                            <span class="page-basket__rain-stat-value" data-rain-minutes>66</span>
+                            <span class="page-basket__rain-stat-suffix">分钟</span>
+                        </div>
+                        <div class="page-basket__rain-stat-row">
+                            <span class="page-basket__rain-stat-label">共</span>
+                            <span class="page-basket__rain-stat-value" data-rain-hits>1500</span>
+                            <span class="page-basket__rain-stat-suffix">拍</span>
+                        </div>
+                    </div>
+                    <div class="page-basket__rain-formula-block" data-rain-formula-block aria-hidden="true">
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                        <p class="page-basket__rain-formula-line" data-rain-formula-line></p>
+                    </div>
+                </div>
+
+===== CHUNK 9 len=649 =====
+        <!-- 开场第 1 页 · Figma 17:237 -->
+        <section class="page page-intro" id="page-intro" data-nav="1" data-figma="17:237" aria-label="开场 第一页">
+            <div class="intro-layout">
+                <img class="intro-bg fade-in-up" src="assets/page-intro/court-bg.png" width="1655" height="2008" alt="" aria-hidden="true">
+                <p class="intro-kicker fade-in-up" style="animation-delay: 0.12s;">训练结算已就绪</p>
+                <p class="intro-headline fade-in-up" style="animation-delay: 0.22s;">你准备好了吗？</p>
+                <p class="intro-hint fade-in-up" style="animation-delay: 0.44s;">下滑查看</p>
+            </div>
+        </section>
+
+===== CHUNK 10 len=560 =====
+            <div class="intro-layout">
+                <div class="intro-scene">
+                    <img class="intro-bg fade-in-up" src="assets/page-intro/court-bg.png" width="1720" height="2048" alt="" aria-hidden="true">
+                    <p class="intro-kicker fade-in-up" style="animation-delay: 0.12s;">训练结算已就绪</p>
+                    <p class="intro-headline fade-in-up" style="animation-delay: 0.22s;">你准备好了吗？</p>
+                    <p class="intro-hint fade-in-up" style="animation-delay: 0.44s;">下滑查看</p>
+                </div>
+            </div>
+
+===== CHUNK 11 len=1354 =====
+        <!-- 导航 6 · 心率统计 · Figma 17:214 -->
+        <section class="page page-2" id="page-2" data-nav="6" data-figma="17:214" aria-label="心率统计">
+            <div class="hr-layout">
+                <div class="hr-stat hr-stat--avg fade-in-up">
+                    <p class="hr-stat__value">129.5</p>
+                    <p class="hr-stat__label">平均心率</p>
+                </div>
+                <div class="hr-stat hr-stat--max fade-in-up" style="animation-delay: 0.1s">
+                    <p class="hr-stat__value">151</p>
+                    <p class="hr-stat__label">最高心率</p>
+                </div>
+                <p class="hr-copy__line hr-copy__line--1 fade-in-up" style="animation-delay: 0.2s">以每次击球过程为2秒来算</p>
+                <p class="hr-copy__line hr-copy__line--2 fade-in-up" style="animation-delay: 0.28s">这相当于每一次击球</p>
+                <p class="hr-copy__prefix fade-in-up" style="animation-delay: 0.36s">你的心脏会跳动</p>
+                <p class="hr-copy__number fade-in-up" style="animation-delay: 0.36s">4</p>
+                <p class="hr-copy__suffix fade-in-up" style="animation-delay: 0.36s">下</p>
+                <img class="hr-equation fade-in-up" src="assets/page-hr/heart-equation.png" width="305" height="36" alt="" aria-hidden="true" style="animation-delay: 0.44s">
+            </div>
+        </section>
+
+        <!-- 导航 7 · 平均每回合拍数 -->
+
+===== CHUNK 12 len=1234 =====
+        <!-- 导航 6 · 心率统计 · Figma 17:214 -->
+        <section class="page page-2" id="page-2" data-nav="6" data-figma="17:214" aria-label="心率统计">
+            <div class="hr-layout">
+                <div class="hr-stat hr-stat--avg fade-in-up">
+                    <p class="hr-stat__value">129.5</p>
+                    <p class="hr-stat__label">平均心率</p>
+                </div>
+                <div class="hr-stat hr-stat--max fade-in-up" style="animation-delay: 0.1s">
+                    <p class="hr-stat__value">151</p>
+                    <p class="hr-stat__label">最高心率</p>
+                </div>
+                <div class="hr-copy fade-in-up" style="animation-delay: 0.2s">
+                    <p class="hr-copy__line hr-copy__line--1">以每次击球过程为2秒来算</p>
+                    <p class="hr-copy__line hr-copy__line--2">这相当于每一次击球</p>
+                    <p class="hr-copy__prefix">你的心脏会跳动</p>
+                    <p class="hr-copy__number">4</p>
+                    <p class="hr-copy__suffix">下</p>
+                </div>
+                <img class="hr-equation fade-in-up" src="assets/page-hr/heart-equation.png" width="305" height="36" alt="" aria-hidden="true" style="animation-delay: 0.44s">
+            </div>
+        </section>
+
+===== CHUNK 13 len=508 =====
+                <p class="hr-copy__line hr-copy__line--1 fade-in-up" style="animation-delay: 0.2s">以每次击球过程为2秒来算</p>
+                <p class="hr-copy__line hr-copy__line--2 fade-in-up" style="animation-delay: 0.28s">这相当于每一次击球</p>
+                <p class="hr-copy__prefix fade-in-up" style="animation-delay: 0.36s">你的心脏会跳动</p>
+                <p class="hr-copy__number fade-in-up" style="animation-delay: 0.36s">4</p>
+                <p class="hr-copy__suffix fade-in-up" style="animation-delay: 0.36s">下</p>
+
+===== CHUNK 14 len=3355 =====
+                <p class="hr-copy__prefix fade-in-up" style="animation-delay: 0.36s">你的心脏会跳动</p>
+                <p class="hr-copy__number pop-in" style="animation-delay: 0.4s">4</p>
+                <p class="hr-copy__suffix fade-in-up" style="animation-delay: 0.44s">下</p>
+                <div class="hr-equation" aria-hidden="true">
+                    <svg class="hr-equation__svg" width="305" height="36" viewBox="0 0 305 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="hr-eq-part hr-eq-part--ball">
+                            <path d="M36 18.0009C36 24.069 32.9961 29.4354 28.3952 32.6951C27.8591 33.0751 27.3024 33.4268 26.7268 33.7447C24.1404 35.1818 21.1647 36 17.9991 36C14.8334 36 11.8577 35.1818 9.27321 33.7447C8.69575 33.4268 8.13898 33.0751 7.60479 32.6951C3.00204 29.4354 0 24.069 0 18.0009C0 8.05998 8.0581 0 17.9991 0C27.94 0 36 8.05998 36 18.0009Z" fill="#BEEE00"/>
+                            <path d="M28.3952 32.6951C27.8591 33.0751 27.3024 33.4268 26.7268 33.7447C24.0464 31.1396 25.0132 26.6515 25.7449 23.2507C26.0459 21.8607 26.328 20.5459 26.328 19.6035C26.328 14.5004 23.5254 11.9141 17.9991 11.9141C12.4728 11.9141 9.67198 14.5004 9.67198 19.6035C9.67198 20.5459 9.95412 21.8607 10.2532 23.2507C10.9868 26.6515 11.9536 31.1377 9.27321 33.7447C8.69575 33.4268 8.13898 33.0751 7.60479 32.6951C9.78484 31.0211 9.2939 27.7218 8.41549 23.6476C8.09384 22.156 7.791 20.7472 7.791 19.6035C7.791 16.0278 9.11709 10.0331 17.9991 10.0331C26.881 10.0331 28.209 16.0278 28.209 19.6035C28.209 20.7472 27.9062 22.156 27.5845 23.6476C26.7061 27.7218 26.2152 31.0211 28.3952 32.6951Z" fill="#ffffff"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--equal">
+                            <rect x="61" y="9" width="28" height="6" fill="#ffffff"/>
+                            <rect x="61" y="21" width="28" height="6" fill="#ffffff"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M133 33C114.52 19.2562 109.492 5.12554 118.041 2.47498C126.588 -0.175579 133 9.13152 133 9.13152C133 9.13152 139.411 -0.175579 147.959 2.47498C156.508 5.12554 151.479 19.2562 133 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M185.5 33C168.479 19.2562 163.848 5.12554 171.722 2.47498C179.595 -0.175579 185.5 9.13152 185.5 9.13152C185.5 9.13152 191.405 -0.175579 199.278 2.47498C207.152 5.12554 202.52 19.2562 185.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M236.5 33C219.479 19.2562 214.848 5.12554 222.722 2.47498C230.595 -0.175579 236.5 9.13152 236.5 9.13152C236.5 9.13152 242.405 -0.175579 250.278 2.47498C258.152 5.12554 253.52 19.2562 236.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M287.5 33C270.479 19.2562 265.848 5.12554 273.722 2.47498C281.595 -0.175579 287.5 9.13152 287.5 9.13152C287.5 9.13152 293.405 -0.175579 301.278 2.47498C309.152 5.12554 304.52 19.2562 287.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                    </svg>
+                </div>
+
+===== CHUNK 15 len=658 =====
+                        <g class="hr-eq-part hr-eq-part--heart">
+                            <path d="M287.5 33C270.479 19.2562 265.848 5.12554 273.722 2.47498C281.595 -0.175579 287.5 9.13152 287.5 9.13152C287.5 9.13152 293.405 -0.175579 301.278 2.47498C309.152 5.12554 304.52 19.2562 287.5 33Z" fill="#FA4B4B"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="hr-heart-wave" aria-hidden="true">
+                <div class="hr-heart-wave__bg"></div>
+                <canvas class="hr-heart-wave__canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- 导航 7 · 平均每回合拍数 -->
+
+===== CHUNK 16 len=1512 =====
+      <div class="skill-layout" data-figma="31:340">
+        <p class="skill-kicker spatial-reveal" data-order="0">如果你是一个游戏角色</p>
+        <p class="skill-headline spatial-reveal" data-order="1">你应该会有这些技能</p>
+
+        <div class="skill-icons">
+          <button type="button" class="skill-icon-item skill-icon-item--1 skill-icon-item--btn spatial-reveal app-tap" data-order="2" data-skill-target="2" aria-label="强力一击 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </div>
+          </button>
+          <button type="button" class="skill-icon-item skill-icon-item--2 skill-icon-item--btn spatial-reveal app-tap" data-order="3" data-skill-target="3" aria-label="绝对防御 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </div>
+          </button>
+          <button type="button" class="skill-icon-item skill-icon-item--3 skill-icon-item--btn spatial-reveal app-tap" data-order="4" data-skill-target="5" aria-label="能力觉醒 · 查看详情">
+            <div class="skill-icon-item__bob">
+              <img class="skill-icon-item__art" src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </div>
+          </button>
+        </div>
+
+        <p class="skill-hint spatial-reveal" data-order="5">点击查看详情</p>
+      </div>
+
+===== CHUNK 17 len=3383 =====
+    <div class="skill-panel skill-panel--page5" data-page="5" data-nav="20-3" aria-label="技能 能力觉醒">
+      <div class="skill-p5-bg" aria-hidden="true"></div>
+
+      <div class="skill-layout skill-layout--p5" data-figma="31:347">
+        <div class="skill-p5-top spatial-reveal" data-order="0">
+          <img class="skill-p5-top__ghost skill-p5-top__ghost--left" src="assets/page-skills/hub-skill-1.png" width="130" height="130" alt="" aria-hidden="true">
+          <div class="skill-p5-hero">
+            <img class="skill-hero-bubble__img" src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+          </div>
+          <img class="skill-p5-top__ghost skill-p5-top__ghost--right" src="assets/page-skills/hub-skill-2.png" width="130" height="130" alt="" aria-hidden="true">
+        </div>
+
+        <p class="skill-p5-badge spatial-reveal" data-order="1">
+          <span data-text="skill_name_p5">能力觉醒</span>
+        </p>
+
+        <p class="skill-p5-tagline spatial-reveal" data-order="2">使用后获得一种拍型的巨大进步</p>
+
+        <div class="skill-p5-chart spatial-reveal" id="skillP5Stage" data-order="3">
+          <div class="skill-p5-arrow-bg" aria-hidden="true">
+            <img src="assets/page-skills/p5-arrow-polygon.svg" width="551" height="925" alt="">
+          </div>
+
+          <div class="skill-p5-bar skill-p5-bar--mistake">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="mistake_rate_before_pct">21.63</span>%</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="mistake_rate_after_pct">17.89</span>%</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">失误率</p>
+          </div>
+
+          <div class="skill-p5-bar skill-p5-bar--speed">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="avg_speed_before_kmh">63.89</span>km/h</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="avg_speed_after_kmh">68.19</span> km/h</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">平均球速</p>
+          </div>
+
+          <div class="skill-p5-bar skill-p5-bar--deep">
+            <p class="skill-p5-bar__value">
+              <span class="skill-p5-bar__val skill-p5-bar__val--before"><span data-count="deep_rate_before_pct">43.93</span>%</span>
+              <span class="skill-p5-bar__val skill-p5-bar__val--after" aria-hidden="true"><span data-count="deep_rate_after_pct">50.20</span>%</span>
+            </p>
+            <div class="skill-p5-bar__fill"></div>
+            <div class="skill-p5-bar__tick"></div>
+            <p class="skill-p5-bar__label">平均深球率</p>
+          </div>
+        </div>
+
+        <button type="button" class="skill-p5-cast-btn app-tap spatial-reveal" data-order="4" aria-label="施放技能">施放技能</button>
+      </div>
+
+      <button type="button" class="skill-close-btn app-tap spatial-reveal" data-order="5" aria-label="返回技能总览">
+        <span class="skill-close-btn__x" aria-hidden="true"></span>
+      </button>
+    </div>
+
+===== CHUNK 18 len=1313 =====
+      <div class="skill-layout skill-layout--p2" data-figma="225:185">
+        <nav class="skill-detail-switcher spatial-reveal" data-order="0" data-active="2" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--left app-tap" data-skill-switch="2" aria-label="强力一击" aria-current="true">
+            <span class="skill-p2-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--center app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--right app-tap" data-skill-switch="3" aria-label="绝对防御">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+        <p class="skill-p2-badge spatial-reveal" data-order="2">
+
+===== CHUNK 19 len=1313 =====
+      <div class="skill-layout skill-layout--p3" data-figma="225:196">
+        <nav class="skill-detail-switcher spatial-reveal" data-order="0" data-active="3" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--left app-tap" data-skill-switch="2" aria-label="强力一击">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--center app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--right app-tap" data-skill-switch="3" aria-label="绝对防御" aria-current="true">
+            <span class="skill-p3-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+        <p class="skill-p3-badge spatial-reveal" data-order="1">
+
+===== CHUNK 20 len=1176 =====
+        <nav class="skill-detail-switcher spatial-reveal" data-order="0" data-active="5" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--left app-tap" data-skill-switch="2" aria-label="强力一击">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--center app-tap" data-skill-switch="5" aria-label="能力觉醒" aria-current="true">
+            <span class="skill-p5-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball skill-detail-switcher__ball--right app-tap" data-skill-switch="3" aria-label="绝对防御">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+===== CHUNK 21 len=1393 =====
+        <div class="skill-p2-stat skill-p2-stat--speed spatial-reveal" data-order="5">
+          <p class="skill-p2-stat__label">本场最高暴击</p>
+          <p class="skill-p2-stat__value">
+            <span
+              class="skill-p2-stat__number skill-p2-stat__number--speed"
+              data-count-idle="max_crit_speed_before"
+              data-count-cast="max_crit_speed"
+            >65</span>
+            <span class="skill-p2-stat__unit">km/h</span>
+          </p>
+        </div>
+
+        <div class="skill-p2-stat skill-p2-stat--stroke spatial-reveal" data-order="6">
+          <p class="skill-p2-stat__label">来自</p>
+          <p class="skill-p2-stat__stroke" data-text="max_crit_stroke">正手截击</p>
+        </div>
+
+        <div class="skill-p2-stat skill-p2-stat--uses spatial-reveal" data-order="7">
+          <p class="skill-p2-stat__label">使用次数</p>
+          <p class="skill-p2-stat__value">
+            <span
+              class="skill-p2-stat__number skill-p2-stat__number--uses"
+              data-count-idle="crit_usage_before"
+              data-count-cast="crit_usage_count"
+            >0</span>
+            <span class="skill-p2-stat__unit">拍</span>
+          </p>
+        </div>
+
+        <div class="skill-p2-cast-wrap spatial-reveal" data-order="8">
+          <button type="button" class="skill-p2-cast-btn app-tap" aria-label="释放技能">释放技能</button>
+        </div>
+      </div>
+
+===== CHUNK 22 len=760 =====
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="2" aria-label="强力一击" aria-current="true">
+            <span class="skill-p2-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="3" aria-label="绝对防御">
+
+===== CHUNK 23 len=510 =====
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="3" aria-label="绝对防御" aria-current="true">
+            <span class="skill-p3-hero skill-detail-switcher__hero">
+
+===== CHUNK 24 len=760 =====
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="2" aria-label="强力一击">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="5" aria-label="能力觉醒" aria-current="true">
+            <span class="skill-p5-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="3" aria-label="绝对防御">
+
+===== CHUNK 25 len=1071 =====
+        <nav class="skill-detail-switcher spatial-reveal" data-order="0" data-active="2" aria-label="技能切换">
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="3" aria-label="绝对防御">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-2.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="2" aria-label="强力一击" aria-current="true">
+            <span class="skill-p2-hero skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-1.png" width="169" height="169" alt="">
+            </span>
+          </button>
+          <button type="button" class="skill-detail-switcher__ball app-tap" data-skill-switch="5" aria-label="能力觉醒">
+            <span class="skill-detail-switcher__hero">
+              <img src="assets/page-skills/hub-skill-3.png" width="169" height="169" alt="">
+            </span>
+          </button>
+        </nav>
+
+===== CHUNK 26 len=967 =====
+        <!-- 导航 9 · 跑动距离 · Figma 1:154 -->
+        <section class="page page-5" id="page-5" data-nav="9" data-figma="1:154" aria-label="跑动距离">
+            <div class="page-5-content">
+                <div class="p5-court" id="p5CourtBg" aria-hidden="true">
+                    <img class="p5-court__img" src="assets/page5/court-bg-figma154.svg" width="498" height="823" alt="">
+                </div>
+
+                <p class="p5-lead p5-text-fade">本场训练</p>
+                <p class="p5-sublead p5-text-fade">你为了击球一共跑动了</p>
+                <p class="p5-distance p5-text-fade">4.13</p>
+                <p class="p5-unit p5-text-fade">公里</p>
+
+                <img class="p5-scribble p5-text-fade" src="assets/page5/run-scribble-figma154.svg" width="419" height="344" alt="" aria-hidden="true">
+
+                <p class="p5-foot-bold p5-text-fade">满场被遛的你</p>
+                <p class="p5-foot-regular p5-text-fade">下次一定会跑得更快吧！</p>
+            </div>
+        </section>
+
+===== CHUNK 27 len=1953 =====
+            </div>
+        </section>
+
+        <!-- 导航 12 · 跑动轨迹（原 P9 动画版） -->
+        <section class="page page-5-trail" id="page-5-trail" data-nav="12" aria-label="跑动轨迹">
+            <div class="page-5-trail__content">
+                <div class="p5t-court" aria-hidden="true">
+                    <img src="assets/page5/court-bg.svg" width="498" height="823" alt="">
+                </div>
+
+                <p class="p5t-lead p5t-text-fade">本场训练</p>
+                <p class="p5t-sublead-a p5t-text-fade">你为了击球</p>
+                <p class="p5t-sublead-b p5t-text-fade">一共跑动了</p>
+                <p class="p5t-distance p5t-text-fade">4.13</p>
+                <p class="p5t-unit p5t-text-fade">公里</p>
+
+                <div class="p5t-animation">
+                    <svg class="p5t-traj-svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="p5t-traj-path" class="p5t-traj-black" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" stroke="black" stroke-width="44" stroke-linejoin="round" stroke-linecap="round" />
+                        <path class="p5t-traj-white" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" stroke="white" stroke-width="40" stroke-linejoin="round" stroke-linecap="round" />
+                    </svg>
+                    <img class="p5t-dog-head" src="assets/page5/dog-head.svg" width="90" height="67" alt="">
+                </div>
+
+                <p class="p5t-foot-bold p5t-text-fade">满场被遛的你</p>
+                <p class="p5t-foot-regular p5t-text-fade">下次一定会跑得更快吧！</p>
+            </div>
+        </section>
+
+        <!-- 导航 13 · 旋球类型 -->
+        <section class="page page-8" id="page-8" data-nav="13" aria-label="旋球类型">
+
+===== CHUNK 28 len=977 =====
+        <!-- 导航 9 · 跑动距离 · Figma 37:454 -->
+        <section class="page page-5" id="page-5" data-nav="9" data-figma="37:454" aria-label="跑动距离">
+            <div class="page-5-content">
+                <p class="p5-lead p5-text-fade">本场训练</p>
+                <p class="p5-sublead p5-text-fade">你为了击球一共跑动了</p>
+                <p class="p5-distance p5-text-fade">4.13</p>
+                <p class="p5-unit p5-text-fade">公里</p>
+
+                <div class="p5-dog p5-text-fade" data-layer="dog" aria-hidden="true">
+                    <img class="p5-dog__body" data-layer="dog-body" src="assets/spatial/dog-body.png" width="419" height="344" alt="">
+                    <img class="p5-dog__head" data-layer="dog-head" src="assets/spatial/dog-head.png" width="91" height="68" alt="">
+                </div>
+
+                <p class="p5-foot-bold p5-text-fade">满场被遛的你</p>
+                <p class="p5-foot-regular p5-text-fade">下次一定会跑得更快吧！</p>
+            </div>
+        </section>
+
+===== CHUNK 29 len=1121 =====
+        <!-- P9–P11 共用场景 · Figma 37:454 / 46:515 / 46:592 -->
+        <div class="sp-scene-overlay" id="spSceneOverlay" aria-hidden="true">
+            <div class="sp-scene" id="spScene" data-layout="p9">
+                <div class="sp-scene__bg" data-layer="bg">
+                    <div class="sp-scene__grass" data-layer="grass"></div>
+                    <div class="sp-scene__field-wrap" data-layer="teniss field">
+                        <div class="sp-scene__tennis-field" data-layer="tennis-field">
+                            <img class="sp-scene__tennis-field-img" src="assets/spatial/tennis-field.png" width="392" height="829" alt="">
+                            <div class="sp-landings" id="landingsPage1"></div>
+                        </div>
+                        <div class="sp-scene__nest" data-layer="nest">
+                            <img src="assets/spatial/nest.png" width="498" height="61" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-landings sp-landings--miss" id="landingsPage2"></div>
+            </div>
+        </div>
+
+===== CHUNK 30 len=679 =====
+                        <div class="sp-scene__nest" data-layer="nest">
+                            <img src="assets/spatial/nest.png" width="498" height="61" alt="">
+                        </div>
+                    </div>
+                    <div class="sp-scene__dog" data-layer="dog" aria-hidden="true">
+                        <img class="sp-scene__dog-body" data-layer="dog-body" src="assets/spatial/dog-body.png" width="419" height="344" alt="">
+                        <img class="sp-scene__dog-head" data-layer="dog-head" src="assets/spatial/dog-head.png" width="91" height="68" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+===== CHUNK 31 len=1023 =====
+        <!-- P9–P10 共用场景 · Figma 46:515 / 46:592 -->
+        <div class="sp-scene-overlay" id="spSceneOverlay" aria-hidden="true">
+            <div class="sp-scene" id="spScene" data-layout="p10">
+                <div class="sp-scene__bg" data-layer="bg">
+                    <div class="sp-scene__grass" data-layer="grass" aria-hidden="true"></div>
+                    <div class="sp-scene__tennis-field" data-layer="tennis-field">
+                        <img class="sp-scene__tennis-field-img" src="assets/spatial/tennis-field.png" width="392" height="829" alt="">
+                        <div class="sp-landings" id="landingsPage1"></div>
+                        <div class="sp-landings sp-landings--miss" id="landingsPage2"></div>
+                    </div>
+                    <div class="sp-scene__nest" data-layer="nest" aria-hidden="true">
+                        <img src="assets/spatial/nest.png" width="498" height="61" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+===== CHUNK 32 len=1014 =====
+        <!-- 导航 11 · 跑动距离 · Figma 37:454 -->
+        <section class="page page-5-trail" id="page-5-trail" data-nav="11" data-figma="37:454" aria-label="跑动距离">
+            <div class="page-5-trail__content">
+                <p class="p11-lead p11-text-fade">本场训练</p>
+                <p class="p11-sublead p11-text-fade">你为了击球一共跑动了</p>
+                <p class="p11-distance p11-text-fade">4.13</p>
+                <p class="p11-unit p11-text-fade">公里</p>
+
+                <div class="p11-dog p11-text-fade" data-layer="dog" aria-hidden="true">
+                    <img class="p11-dog__body" data-layer="dog-body" src="assets/spatial/dog-body.png" width="419" height="344" alt="">
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/spatial/dog-head.png" width="91" height="68" alt="">
+                </div>
+
+                <p class="p11-foot-bold p11-text-fade">满场被遛的你</p>
+                <p class="p11-foot-regular p11-text-fade">下次一定会跑得更快吧！</p>
+            </div>
+        </section>
+
+===== CHUNK 33 len=628 =====
+                    <div class="sp-scene__tennis-field" data-layer="tennis-field">
+                        <img class="sp-scene__tennis-field-img" src="assets/spatial/tennis-field.png" width="392" height="829" alt="">
+                        <div class="sp-landings" id="landingsPage1"></div>
+                        <div class="sp-landings sp-landings--miss" id="landingsPage2"></div>
+                        <div class="sp-scene__nest" data-layer="nest" aria-hidden="true">
+                            <img src="assets/spatial/nest.svg" width="498" height="61" alt="">
+                        </div>
+                    </div>
+
+===== CHUNK 34 len=710 =====
+                    <div class="sp-scene__tennis-field" data-layer="tennis-field">
+                        <img class="sp-scene__tennis-field-img" src="assets/spatial/tennis-field.png" width="392" height="829" alt="">
+                        <div class="sp-landings" id="landingsPage1"></div>
+                        <div class="sp-landings sp-landings--miss" id="landingsPage2"></div>
+                    </div>
+                    <div class="sp-scene__nest" data-layer="nest" aria-hidden="true">
+                        <div class="sp-scene__nest-media">
+                            <img src="assets/spatial/nest.svg" width="498" height="67" alt="">
+                        </div>
+                    </div>
+
+===== CHUNK 35 len=2843 =====
+                <div class="p11-dog p11-text-fade" data-layer="dog" aria-hidden="true">
+                    <svg class="p11-dog__svg" viewBox="0 0 419.502 344.502" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" fill="none" stroke="none"/>
+                        <path class="p11-dog__body" data-layer="dog-body" d="M84.7001 7.56884C90.493 -0.0152473 101.243 -1.77316 109.163 3.64501L192.887 60.9184L229.907 50.3335L237.259 25.8296L237.382 25.437C240.039 17.2554 248.137 12.0765 256.712 13.1382C265.423 14.2168 272.086 21.4212 272.481 30.1899L272.836 38.0591L358.052 13.6948C367.61 10.962 377.574 16.4951 380.307 26.0532C383.039 35.6113 377.506 45.5752 367.948 48.3081L274.504 75.0249L275.084 87.8979L304.312 72.9712L304.75 72.7554C309.291 70.5887 314.541 70.4194 319.223 72.3042C324.055 74.2499 327.807 78.1936 329.511 83.1167L371.778 205.298L400.19 204.02C408.84 203.631 416.541 209.455 418.522 217.883C420.503 226.312 416.202 234.957 408.284 238.461L386.575 248.068L393.511 268.117C396.223 275.958 393.225 284.637 386.251 289.131C379.277 293.626 370.134 292.772 364.114 287.063L343.224 267.253L173.284 342.461C166.857 345.305 159.363 344.149 154.093 339.5C148.822 334.852 146.74 327.561 148.759 320.83L169.881 250.421L146.309 251.483C137.383 251.885 129.513 245.677 127.824 236.903L121.976 206.519L87.6874 224.032C78.8342 228.553 67.9913 225.042 63.4696 216.189C58.948 207.336 62.4593 196.493 71.3124 191.971L114.892 169.712L105.945 123.22L23.4481 146.808C16.0669 148.919 8.15945 146.115 3.75574 139.827C-0.647967 133.538 -0.578493 125.149 3.92859 118.934L84.4286 7.93407L84.7001 7.56884ZM207.98 248.707L194.478 293.714L306.163 244.288L207.98 248.707ZM155.356 189.47L160.234 214.82L180.839 213.892L194.102 169.682L155.356 189.47ZM218.939 212.177L282.144 209.333L248.114 177.063C244.734 173.858 242.728 169.466 242.518 164.813L242.173 157.153L236.012 155.27L218.939 212.177ZM317.724 159.158C317.442 160.735 316.945 162.297 316.222 163.802C312.697 171.131 304.762 175.101 296.927 173.737L332.093 207.084L334.269 206.987L317.724 159.158ZM148.272 152.665L177.924 137.521L143.323 126.949L148.272 152.665ZM284.436 123.545L310.163 141.145C310.808 141.586 311.415 142.064 311.985 142.572L302.255 114.445L284.436 123.545ZM182.591 101.305L192.662 104.382L186.521 100.181L182.591 101.305ZM63.6805 97.8618L147.92 73.7749L103.29 43.2446L63.6805 97.8618Z" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/page5/dog-head.svg" width="91" height="68" alt="">
+                </div>
+
+===== CHUNK 36 len=865 =====
+                <div class="p11-dog p11-text-fade" data-layer="dog" aria-hidden="true">
+                    <svg class="p11-dog__svg" viewBox="0 0 419.502 344.502" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" data-layer="dog-body" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" fill="none" stroke="none"/>
+                        <use href="#p11-dog-path" class="p11-dog__stroke p11-dog__stroke--black"/>
+                        <use href="#p11-dog-path" class="p11-dog__stroke p11-dog__stroke--white"/>
+                    </svg>
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/page5/dog-head.svg" width="91" height="68" alt="">
+                </div>
+
+===== CHUNK 37 len=1137 =====
+                <div class="p11-dog" data-layer="dog" aria-hidden="true">
+                    <svg class="p11-dog__svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" data-layer="dog-body" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" fill="none" stroke="none" visibility="hidden"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--black" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--white" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                    </svg>
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/page5/dog-head.svg" width="91" height="68" alt="">
+                </div>
+
+===== CHUNK 38 len=673 =====
+                    <svg class="p11-dog__svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" class="p11-dog__stroke p11-dog__stroke--black" data-layer="dog-body" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--white" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                    </svg>
+
+===== CHUNK 39 len=818 =====
+                    <svg class="p11-dog__svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" class="p11-dog__stroke p11-dog__stroke--black" data-layer="dog-body" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--white" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <image class="p11-dog__head" data-layer="dog-head" href="assets/page5/dog-head.svg" width="91" height="68" x="0" y="0"/>
+                    </svg>
+
+===== CHUNK 40 len=1168 =====
+                <div class="p11-dog" data-layer="dog" aria-hidden="true">
+                    <svg class="p11-dog__svg" viewBox="0 0 418 343" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="p11-dog-path" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312" fill="none" stroke="none"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--black" data-layer="dog-body" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                        <path class="p11-dog__stroke p11-dog__stroke--white" pathLength="100" d="M 52 48 L 178 22 L 365 92 L 108 128 L 312 58 L 372 165 L 125 195 L 328 108 L 85 255 L 275 175 L 355 268 L 165 285 L 58 210 L 215 145 L 345 228 L 198 312"/>
+                    </svg>
+                    <img class="p11-dog__head" data-layer="dog-head" src="assets/page5/dog-head.svg" width="91" height="68" alt="">
+                </div>
+
+===== CHUNK 41 len=2985 =====
+        <section class="page page-coach page-coach-2" id="page-coach-2" data-coach-page="2" data-nav="22" aria-label="教练碎碎念 第二页">
+            <div class="coach-stage">
+    <div class="coach-panel coach-panel--page2 is-active" data-page="2" data-figma="63:751" aria-label="教练碎碎念 第二页">
+      <div class="coach-page2-bg" aria-hidden="true">
+        <img class="coach-page2-paper-texture" src="assets/coach-page2-paper-texture.png" width="440" height="769" alt="">
+        <div class="coach-page2-blue-wrap">
+          <img class="coach-page2-blue" src="assets/coach-page2-head-blue.png" alt="">
+        </div>
+      </div>
+
+      <img class="coach-quote-open" src="assets/coach-page2-quote.png" width="188" height="142" alt="" aria-hidden="true">
+
+      <h1 class="coach-headline spatial-reveal" data-order="0">
+        <span class="coach-headline__line">老毛病</span>
+        <span class="coach-headline__line">咱能改改吗？</span>
+      </h1>
+
+      <p class="coach-stat coach-stat--lead spatial-reveal" data-order="1">四堂课了，</p>
+      <p class="coach-stat coach-stat--prefix spatial-reveal" data-order="2">你一共打框了</p>
+      <p class="coach-stat coach-stat--number spatial-reveal" data-order="3">
+        <span data-count="frame_hits_total">209</span>
+      </p>
+      <p class="coach-stat coach-stat--suffix spatial-reveal" data-order="4">次</p>
+      <p class="coach-stat coach-stat--question spatial-reveal" data-order="5">你球拍的甜区和网球刚离婚吗？</p>
+
+      <img class="coach-page2-paper-card spatial-reveal" data-order="5" src="assets/coach-page2-paper-card.png" width="389" height="270" alt="" aria-hidden="true">
+
+      <div class="coach-racket spatial-reveal" data-order="5" aria-hidden="true">
+        <div class="coach-racket__visual">
+          <img class="coach-racket__img" src="assets/coach-page2-racket.png" width="407" height="269" alt="">
+          <div
+            class="coach-racket__area"
+            data-area-cx="118.635"
+            data-area-cy="200.216"
+            data-area-rx="106.178"
+            data-area-ry="91.652"
+            data-area-rot="-13.03"
+            aria-hidden="true"
+          >
+            <img src="assets/coach-page2-area.png" alt="">
+          </div>
+          <svg
+            class="coach-racket__dots"
+            id="coachRacketDots"
+            viewBox="0 0 406.5 268.5"
+            preserveAspectRatio="xMidYMid meet"
+            aria-hidden="true"
+          ></svg>
+        </div>
+      </div>
+
+      <p class="coach-foot coach-foot--1 spatial-reveal" data-order="6">正手的失误率居然比第二次训练还高</p>
+      <p class="coach-foot coach-foot--reach spatial-reveal" data-order="7">达到了</p>
+      <p class="coach-foot coach-foot--rate spatial-reveal" data-order="8">
+        <span data-count="forehand_mistake_rate_pct">20</span>%
+      </p>
+      <p class="coach-foot coach-foot--2 spatial-reveal" data-order="9">比刚学的正、反手截击还高！！！</p>
+      <p class="coach-foot coach-foot--3 spatial-reveal" data-order="10">喜新厌旧的人！！！</p>
+    </div>
+            </div>
+        </section>
+
+===== CHUNK 42 len=654 =====
+      <div class="coach-page2-paper-card-wrap" aria-hidden="true">
+        <img class="coach-page2-paper-card" src="assets/coach-page2-paper-card.svg" alt="">
+      </div>
+
+      <div class="coach-racket" aria-hidden="true">
+        <div class="coach-racket__visual">
+          <img class="coach-racket__img" src="assets/coach-page2-racket.png" width="407" height="269" alt="">
+          <div
+            class="coach-racket__area"
+            data-area-cx="118.635"
+            data-area-cy="200.216"
+            data-area-rx="106.178"
+            data-area-ry="91.652"
+            data-area-rot="-13.03"
+            aria-hidden="true"
+          ></div>

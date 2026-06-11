@@ -1,0 +1,303 @@
+/* P14 · Figma 74:875 · 440×956 · 仅 #page-10 */
+
+#page-10.page-10 {
+  background: linear-gradient(180deg, #004bb4 0%, #0079dc 100%) !important;
+  overflow: hidden;
+  container-type: normal;
+}
+
+#page-10 .page-p14-layout {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 440px;
+  height: 956px;
+  transform: translateX(-50%) scale(clamp(0.01, var(--base-scale, 1), 3));
+  transform-origin: top center;
+  overflow: visible;
+  isolation: isolate;
+  font-family: 'HarmonyOS Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Source Han Sans SC', '思源黑体', -apple-system, sans-serif;
+}
+
+#page-10 .page-p14-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* Figma 74:876 Vector 53 Stroke */
+#page-10 .page-p14-vector-wrap {
+  position: absolute;
+  left: -130.02px;
+  top: 124.48px;
+  width: 567.211px;
+  height: 891.026px;
+  transition: opacity 0.6s ease;
+}
+
+#page-10 .page-p14-vector-bleed {
+  position: absolute;
+  inset: -0.35% -0.35% -0.17% -0.35%;
+}
+
+#page-10 .page-p14-vector {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figma 74:877 · Text/Regular */
+#page-10 .page-p14-kicker {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 94px;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+  z-index: 5;
+}
+
+/* Figma 74:878 · Text/Large */
+#page-10 .page-p14-headline {
+  position: absolute;
+  left: calc(50% - 159px);
+  top: 121px;
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: -0.32px;
+  z-index: 5;
+}
+
+#page-10 .page-p14-photo {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#page-10 .page-p14-photo img {
+  display: block;
+  max-width: none;
+}
+
+/* Figma 74:889 斯瓦泰克 ghost */
+#page-10 .page-p14-photo--swiatek-ghost {
+  left: 40px;
+  top: 148px;
+  width: 182px;
+  height: 324px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#page-10 .page-p14-photo--swiatek-ghost img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Figma 74:890 斯瓦泰克 solid */
+#page-10 .page-p14-photo--swiatek-solid {
+  left: 40px;
+  top: 148px;
+  width: 182px;
+  height: 324px;
+  opacity: 1;
+  z-index: 2;
+  -webkit-clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s, -webkit-clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+#page-10 .page-p14-photo--swiatek-solid img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Figma 74:883 纳达尔 ghost */
+#page-10 .page-p14-photo--nadal-ghost {
+  left: 230px;
+  top: 179px;
+  width: 234px;
+  height: 463px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#page-10 .page-p14-photo--nadal-ghost img {
+  position: absolute;
+  height: 103.17%;
+  width: 139.86%;
+  left: -25.18%;
+  top: 0;
+}
+
+/* Figma 74:884 纳达尔 solid */
+#page-10 .page-p14-photo--nadal-solid {
+  left: 230px;
+  top: 179px;
+  width: 234px;
+  height: 463px;
+  opacity: 1;
+  z-index: 2;
+  -webkit-clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s, -webkit-clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+
+#page-10 .page-p14-photo--nadal-solid img {
+  position: absolute;
+  height: 103.17%;
+  width: 139.86%;
+  left: -25.18%;
+  top: 0;
+}
+
+/* Figma 74:896 郑钦文 ghost */
+#page-10 .page-p14-photo--zheng-ghost {
+  left: 106px;
+  top: 514px;
+  width: 187px;
+  height: 332px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#page-10 .page-p14-photo--zheng-ghost img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Figma 74:897 郑钦文 solid */
+#page-10 .page-p14-photo--zheng-solid {
+  left: 106px;
+  top: 514px;
+  width: 187px;
+  height: 332px;
+  opacity: 1;
+  z-index: 2;
+  -webkit-clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.4s, -webkit-clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
+}
+
+#page-10 .page-p14-photo--zheng-solid img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page-10 .page-p14-bar {
+  position: absolute;
+  width: 198px;
+  height: 14px;
+  background: #fff;
+  z-index: 3;
+}
+
+#page-10 .page-p14-bar--swiatek {
+  left: 21px;
+  top: 472px;
+}
+
+#page-10 .page-p14-bar--nadal {
+  left: 230px;
+  top: 628px;
+}
+
+#page-10 .page-p14-bar--zheng {
+  left: 95px;
+  top: 846px;
+}
+
+#page-10 .page-p14-label {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+  z-index: 4;
+}
+
+#page-10 .page-p14-label--swiatek {
+  left: 68px;
+  top: 499px;
+}
+
+#page-10 .page-p14-label--nadal {
+  left: 310px;
+  top: 652px;
+}
+
+#page-10 .page-p14-label--zheng {
+  left: 141px;
+  top: 872px;
+}
+
+#page-10.active .page-p14-kicker.anim-text,
+#page-10.active .page-p14-headline.anim-text,
+#page-10.active .page-p14-label.anim-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#page-10.active .page-p14-photo--swiatek-solid {
+  -webkit-clip-path: inset(76% 0 0 0);
+  clip-path: inset(76% 0 0 0);
+}
+#page-10.active .page-p14-photo--nadal-solid {
+  -webkit-clip-path: inset(62% 0 0 0);
+  clip-path: inset(62% 0 0 0);
+}
+#page-10.active .page-p14-photo--zheng-solid {
+  -webkit-clip-path: inset(82% 0 0 0);
+  clip-path: inset(82% 0 0 0);
+}
+
+#page-10.exit-to-11 .page-p14-photo {
+  animation: page-p14-fall 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+#page-10.exit-to-11 .page-p14-bar,
+#page-10.exit-to-11 .page-p14-label,
+#page-10.exit-to-11 .page-p14-vector-wrap {
+  opacity: 0 !important;
+  transition: opacity 0.6s ease;
+}
+
+@keyframes page-p14-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(956px);
+  }
+}
